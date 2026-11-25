@@ -24,7 +24,7 @@ tags: [orga, ziel]
 ## Grobe Rechnung (Annahme, noch nicht geprüft)
 - Annahme: ca. 0,30–1,00 € pro 1.000 monetarisierten Views.
 - → ca. **4–13 Mio. monetarisierte Views pro Monat** nötig.
-- Aktuelle Auszahlungsraten und Bedingungen der Plattformen müssen noch geprüft und hier eingetragen werden.
+- Geprüft 25.11.2026: TikTok ca. 0,40–1,00 €, Shorts nur 0,03–0,20 $ → TikTok ist Hauptmotor, Long-Form später. Details: [[Auszahlungen]]
 
 ## Noch offen
 | Frage | Antwort |
