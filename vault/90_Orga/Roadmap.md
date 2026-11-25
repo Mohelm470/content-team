@@ -82,7 +82,7 @@ Alle Steckbriefe: `90_Orga/Agenten/` · Tabellen-Ansicht: [[Agenten.base]]
 - [ ] Pro Top-Nische 2–3 Test-Skripte schreiben lassen ([[Creator]] von Hand) **(B)**
 - [ ] Gemeinsame Entscheidung: **eine** Nische festlegen **(Owner: B)**
 - [ ] [[brand-voice]] ausfüllen (Zielgruppe, Ton, Do's & Don'ts, 3 Beispiel-Hooks) **(B)**
-- [ ] TikTok-Account anlegen (Name passend zur Nische, Business-Konto für Statistiken) **(B)**
+- [ ] TikTok-Account anlegen (Name passend zur Nische, **persönliches Konto** – Business-Konto ist von Creator Rewards ausgeschlossen) **(B)**
 - [ ] YouTube-Kanal anlegen **(A)**
 - [ ] Zugangsdaten sicher teilen – **nicht** im Repo/Vault, sondern im Passwort-Manager **(A)**
 - [ ] Accounts 3–5 Tage „aufwärmen" (in der Nische schauen, liken, folgen) **(A)** **(B)**

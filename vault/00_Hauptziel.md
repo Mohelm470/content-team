@@ -29,9 +29,9 @@ tags: [orga, ziel]
 ## Noch offen
 | Frage | Antwort |
 |---|---|
-| Nische | |
-| Sprache (DE / EN) | |
-| Deadline | |
-| Stunden pro Woche (A / B) | |
+| Nische | offen – Favorit: emotionale wahre Geschichten (Test läuft) |
+| Sprache (DE / EN) | **Englisch** |
+| Deadline | so schnell wie möglich; realistisch 9–15 Monate, nicht garantiert |
+| Zeit | je 3–4 Std. pro Tag |
 
 Siehe auch: [[Roadmap]] · [[Kanban]]

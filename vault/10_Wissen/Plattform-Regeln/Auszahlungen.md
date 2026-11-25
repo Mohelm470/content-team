@@ -15,9 +15,17 @@ tags: [wissen, monetarisierung]
 - **RPM DE:** ca. 0,40–1,00 € pro 1.000 qualifizierten Views (Schätzungen, z. B. ~0,80 €).
 
 ## YouTube Shorts (Partnerprogramm)
-- **Voraussetzungen (aus Erfahrung, 2026 nicht neu geprüft):** 1.000 Abos + 10 Mio. Shorts-Views in 90 Tagen *oder* 4.000 Std. Watchtime Long-Form.
+- **Voraussetzungen bis 31.01.2027:** 1.000 Abos + 10 Mio. Shorts-Views in 90 Tagen *oder* 4.000 Std. Watchtime Long-Form.
+- **Ab 01.02.2027 (laut Tubefilter/YouTube, gegenprüfen):** 1.000 Abos + **20 Mio.** Shorts-Views *oder* **8.000 Std.** Wer vorher drin ist, bleibt drin („grandfathered“).
 - **RPM Shorts:** ca. 0,03–0,20 $ pro 1.000 Views. Creator bekommen 45 % aus einem Werbetopf.
 - **RPM Long-Form:** ein Vielfaches (grob 1,50–25 $ je Nische).
+
+## TikTok mit persönlichem Konto – Regeln, die wir einhalten
+- **Persönliches Konto**, kein Business-Konto. Konto gehört rechtlich einer Person (Auszahlung an sie, intern teilen).
+- **Jedes Video > 60 s**, sonst kein Geld.
+- **Originalität:** eigene Skripte, eigener Schnitt. KI-Stimme über eigenes Skript ist laut mehreren Quellen ok; reine KI-Clips, Reuploads, unbearbeitetes Stock-Material = Risiko. KI-Inhalte kennzeichnen.
+- Englisch: US/UK-Zuschauer bringen meist höhere RPM als DE (Schätzung, nicht offiziell).
+- Für 2027 ist bei TikTok keine Änderung angekündigt (Stand 25.11.2026).
 
 ## Folgerung für unser Ziel (4.000 €/Monat)
 | Quelle | Benötigte Views/Monat |
@@ -33,6 +41,10 @@ tags: [wissen, monetarisierung]
 - **Gewinn ≠ Auszahlung:** Steuern und Gewerbe einplanen (Steuerberatung klären).
 
 ## Quellen
+- https://support.google.com/youtube/answer/72851
+- https://www.tubefilter.com/2026/08/10/youtube-partner-program-ad-eligibility-requirements-shorts/
+- https://clipugc.com/blog/tiktok-creator-rewards-ai-content
+- https://www.lilachbullock.com/ai-generated-videos-monetised-tiktok/
 - https://linkdash.eu/en/blog/tiktok-creator-rewards-europe-2026-realistic-earnings-by-country-uk-13
 - https://postlinkapp.com/blog/tiktok-creator-rewards-program
 - https://reachviva.com/blog/tiktok-creator-rewards-program-requirements-rpm
