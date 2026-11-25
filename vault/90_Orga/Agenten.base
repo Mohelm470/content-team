@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.inFolder("90_Orga/Agenten")
+views:
+  - type: table
+    name: Alle Agenten
+    order:
+      - file.name
+      - rhythmus
+      - ausloeser
+      - owner
+      - phase
+      - status
+    sort:
+      - property: phase
+        direction: ASC
+  - type: cards
+    name: Nach Owner
+    groupBy:
+      property: owner
+      direction: ASC
+    order:
+      - file.name
+      - rhythmus
+      - status
