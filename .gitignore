@@ -1,0 +1,8 @@
+media/
+*.mp4
+*.mov
+vault/.obsidian/workspace*.json
+vault/.trash/
+.DS_Store
+__pycache__/
+node_modules/
