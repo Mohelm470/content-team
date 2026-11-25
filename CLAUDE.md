@@ -3,7 +3,7 @@
 Zwei Personen, verschiedene Standorte. Ziel: virale *Formate* finden und für unsere Nische neu umsetzen – nie Inhalte kopieren.
 Budget: nur das Claude-Abo. Kostenlose Werkzeuge bevorzugen.
 
-**Hauptziel:** 4.000 €/Monat Gewinn ausschließlich über Plattform-Auszahlungen für Views (TikTok Creator Rewards, YouTube-Partnerprogramm). Details: `vault/00_Hauptziel.md` – vor jeder Strategie-Empfehlung lesen.
+**Hauptziel:** 4.000 €/Monat Gewinn ausschließlich über Plattform-Auszahlungen für Views (TikTok Creator Rewards, YouTube-Partnerprogramm). Details: `vault/00_Hauptziel.md` – vor jeder Strategie-Empfehlung lesen. Strategie: `vault/01_Strategie.md`.
 
 ## Arbeitsweise mit Claude
 - Antworten auf Deutsch, kurz, einfache Worte. Nicht nachfragen, was in diesem Repo steht – erst hier lesen.

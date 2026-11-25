@@ -34,4 +34,4 @@ tags: [orga, ziel]
 | Deadline | so schnell wie möglich; realistisch 9–15 Monate, nicht garantiert |
 | Zeit | je 3–4 Std. pro Tag |
 
-Siehe auch: [[Roadmap]] · [[Kanban]]
+Strategie: [[01_Strategie]] · Siehe auch: [[Roadmap]] · [[Kanban]]
