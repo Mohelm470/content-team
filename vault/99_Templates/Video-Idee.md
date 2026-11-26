@@ -20,3 +20,12 @@ learnings:
 ## Szenen / Stock-Footage-Suchbegriffe
 
 ## Caption & Hashtags
+
+## Quellen (wahre Geschichte belegen)
+
+## Geld-Check vor dem Upload
+- [ ] Skript selbst geschrieben, nichts 1:1 vorgelesen
+- [ ] Anders als die letzten Videos (Hook, Aufbau, Optik)
+- [ ] Stimme klingt natürlich, keine echt wirkende KI-Person
+- [ ] Nichts Verstörendes, nichts Politisches
+- [ ] Quellen oben eingetragen

@@ -16,6 +16,7 @@ Budget: nur das Claude-Abo. Kostenlose Werkzeuge bevorzugen.
 - Skills liegen nur in diesem Projekt (`.claude/skills/`), nie global – damit andere Projekte keine Tokens verbrauchen.
 - Notizen gehören in `vault/` (eigener Obsidian-Vault). Andere Vaults des Nutzers nie anfassen.
 - Jede Video-Notiz nach `vault/99_Templates/Video-Idee.md`; jede Notiz hat genau einen `owner`.
+- **Geld-Regeln immer beachten** (Skripte, Ideen, Agenten): siehe `vault/01_Strategie.md` → Risiken. Jedes Video durchläuft den „Geld-Check" in der Video-Vorlage.
 - Große Dateien (Videos, Rohmaterial) nicht in Git, sondern in `media/` (ignoriert).
 
 ## Ablauf
