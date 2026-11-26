@@ -14,8 +14,7 @@ tags: [orga, strategie]
 - **Hochkant 9:16, 1080×1920, 65–75 s** (sicher > 60 s für TikTok, < 3 min für Shorts/Reels).
 - Untertitel eingebrannt, **mittig** (unten ~20 % und rechter Rand werden von Buttons verdeckt).
 - Kein Plattform-Wasserzeichen, nur lizenzfreie Musik, kein „folgt mir auf TikTok“.
-- **Long-Form, Stufe 1 (Monat 1–3):** keine neue Produktion – 8–12 Master-Videos aneinander, hochkant mittig auf 16:9 mit unscharfem Hintergrund, neues Intro + Übergänge.
-- **Long-Form, Stufe 2 (sobald YouTube anzieht):** eigene 8–15-min-Videos, eine große Geschichte mit Tiefe – höchste RPM.
+- **Long-Form (geändert 26.11.2026):** **keine** Aneinanderreihung von Shorts (gilt als Schablone/wiederverwendet). Stattdessen: ab Monat 2 pro Woche **ein** eigenes 8–12-min-Video – **eine** große Geschichte mit Tiefe, neu geschrieben und neu geschnitten, quer 16:9. Die Shorts sind nur Trailer dafür („Full story on my channel"). Höchste RPM.
 
 > [!check] Entschieden am 26.11.2026 (A + B) – durch Recherche bestätigt, siehe Abschnitt 9
 > Ein Master-Format (9:16, 65–75 s) für alle Plattformen + Long-Form in 2 Stufen.
@@ -25,7 +24,7 @@ tags: [orga, strategie]
 |---|---|---|---|---|---|
 | 1 | **TikTok** (persönliches Konto) | Original-Video | **61–90 s** | 2–3 / Tag | Reichweite, Creator Rewards |
 | 2 | **YouTube Shorts** | dasselbe Video, ohne TikTok-Wasserzeichen | 61–90 s (max. 3 min) | 2–3 / Tag | Abos sammeln, Zubringer |
-| 3 | **YouTube Long-Form** | 8–12 beste Geschichten als Compilation, quer 16:9 | **8–15 min** | 1–2 / Woche | höchste RPM |
+| 3 | **YouTube Long-Form** | eine große Geschichte, neu geschrieben + geschnitten, quer 16:9 (keine Compilation) | **8–12 min** | 1 / Woche | höchste RPM |
 | 4 | später: Instagram/Facebook Reels | dasselbe Video | 61–90 s | täglich | Zusatz-Views (Auszahlung erst prüfen) |
 
 Immer die **saubere Exportdatei** hochladen (nie von TikTok herunterladen → Wasserzeichen wird abgestraft).
@@ -47,6 +46,12 @@ Drei Unter-Formate, je 10 Videos, dann das beste verdoppeln:
 - **C – Schicksale mit Wendung** (Unrecht, Comeback, unwahrscheinliche Zufälle)
 
 Gewinner = höchste **durchschnittliche Wiedergabedauer + Shares**, nicht Likes.
+
+**Zusatz-Tests (26.11.2026), damit wir Potenzial und Sicherheit messen:**
+- **Stimme:** je 10 Videos mit echter Menschenstimme vs. KI-Stimme. Vergleich: Wiedergabedauer, Shares, ob TikTok/YouTube Reichweite drosselt.
+- **Aufbau:** pro Format 2 Varianten (Hook-Typ, Länge 65 s vs. 90 s, Bildstil) – nie 10× dieselbe Schablone.
+- **Vergleichsformat:** Gänsehaut-Geschichte (gemeinfreie Bilder) als Kontrolle zur Hauptnische.
+- **Stopp-Regel:** Nach 30 Videos entscheiden die Zahlen. Liegt Ø Wiedergabe < 50 % oder kommt keine Reichweite → Nische/Format wechseln, nicht weitermachen.
 
 ## 4. Posten
 - **Zielgruppe USA/UK.** US-Abend (19–22 Uhr ET) = **1–4 Uhr deutscher Zeit** → Videos **vorplanen** (TikTok-Planer am PC, YouTube-Planung).
@@ -98,7 +103,8 @@ Gewinner = höchste **durchschnittliche Wiedergabedauer + Shares**, nicht Likes.
 
 ## 11. Risiken
 - **Originalität:** eigene Skripte + eigener Schnitt. Keine Reuploads fremder Clips, kein unbearbeitetes Stock-Material.
-- **YouTube „wiederverwendete Inhalte“:** Compilations nur aus **eigenen** Videos, mit neuem Intro/Übergängen.
+- **YouTube „wiederverwendete Inhalte“:** keine reinen Compilations; Long-Form immer neu geschrieben und geschnitten.
+- **TikTok „Originalinhalt“ (Creator-Rewards-Regeln):** Videos müssen komplett von uns erstellt sein oder neue Ideen einbringen. „Primär KI-generierte" Inhalte zählen bei anderen TikTok-Programmen **nicht** → Skript immer von Menschen geschrieben/umgeschrieben, Schnitt von uns, KI nur als Werkzeug; Stimme: echte Menschenstimme bevorzugt (siehe Tests). KI-Kennzeichnung setzen, wenn KI-Bilder/-Stimme.
 - **Fakten:** wahre Geschichten belegen (Quelle in der Video-Notiz).
 - **Plattformregeln ändern sich** → Quartalsweise [[Auszahlungen]] prüfen.
 - **Kein Geld von YouTube vermeiden** (Regel „inauthentic content", ergänzt 26.11.2026):

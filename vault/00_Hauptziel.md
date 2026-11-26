@@ -20,6 +20,16 @@ tags: [orga, ziel]
 - **Potenzial:** Nische 1 hat 32 Punkte, gleichauf mit „Gänsehaut-Geschichte". Der Vorsprung ist klein. Die Daten stammen aus Blogs von Tool-Anbietern, also Schätzungen. **Nicht bewiesen, dass es die beste Nische ist** – der Formattest (erste 30 Videos) entscheidet.
 - **Sicherheit:** Es gibt **keine 100 % Sicherheit**. Faceless ist erlaubt. Das Risiko liegt bei Fließband-Videos, fremden Texten und KI-Stimme ohne eigene Arbeit. Mit den Regeln in [[01_Strategie]] ist es kontrollierbar, aber nicht null. Gänsehaut-Geschichten mit gemeinfreien Bildern sind etwas sicherer als erzählte „wahre Geschichten", weil Quellen und Bilder klar belegbar sind.
 
+### Ehrliche Zielleiter (26.11.2026)
+4.000 €/Monat brauchen grob 4–10 Mio. qualifizierte TikTok-Views/Monat – möglich, aber nicht sicher. Deshalb Stufen, jede ist ein echter Erfolg:
+| Stufe | Ziel |
+|---|---|
+| 1 | Creator Rewards freigeschaltet (10.000 Follower, 100.000 Views/30 Tage) |
+| 2 | 500 €/Monat |
+| 3 | 2.000 €/Monat (1 Person) |
+| 4 | 4.000 €/Monat |
+Zweites Standbein früh aufbauen: YouTube Long-Form (höhere RPM), damit nicht alles an TikTok hängt.
+
 ## Einnahmequelle: nur „Geld für Klicks“
 - **Ausschließlich Plattform-Auszahlungen für Views:** TikTok Creator Rewards, YouTube-Partnerprogramm (Shorts), ggf. weitere Plattformen.
 - **Vorerst NICHT:** Kundenaufträge, Affiliate, eigene Produkte.

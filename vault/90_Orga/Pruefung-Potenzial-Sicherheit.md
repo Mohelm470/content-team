@@ -32,6 +32,19 @@ Prüfung von Nische, Strategie und Brand-Voice mit den zwei Dauer-Prüffragen au
 6. **Nischen-Punkte:** Abstand zwischen Platz 1 und 2 ist null. „Spaß" wurde geschätzt, „Konkurrenz" bei Nische 1 mit 3 ohne Beleg. → Formattest entscheidet, nicht die Tabelle.
 7. **Hooks im Brand-Voice** sind Stilbeispiele. Echte Videos brauchen belegte Quellen (sonst Fake-Risiko + YouTube „irreführend").
 
+## Lösungen (umgesetzt 26.11.2026)
+| Problem | Lösung | Wo |
+|---|---|---|
+| Long-Form-Compilation | gestrichen → 1 neue, große Geschichte pro Woche; Shorts nur als Trailer | [[01_Strategie]] |
+| Schablone | 2 Aufbau-Varianten pro Format, Hook/Länge/Bildstil wechseln | [[01_Strategie]] Formattest |
+| Mensch-Signal / KI-Risiko | Test echte Stimme vs. KI; Skript + Schnitt immer von uns | [[01_Strategie]] |
+| TikTok-Regeln | **Geprüft:** Creator-Rewards-Videos müssen Originalinhalt sein (komplett von uns oder mit neuen Ideen). Bei anderen TikTok-Programmen zählt „primär KI-generiert" nicht ([TikTok-Terms](https://www.tiktok.com/legal/page/global/creator-rewards-program-us/en)). Für Creator Rewards steht nichts Genaues zu KI → Risiko bleibt, daher menschlicher Anteil hoch | [[01_Strategie]] Risiken |
+| Nische unbewiesen | Kontrollformat Gänsehaut + Stopp-Regel nach 30 Videos | [[01_Strategie]] |
+| Eine Plattform | Long-Form ab Monat 2 als zweites Standbein | [[01_Strategie]] |
+| Zielzahl | Zielleiter in 4 Stufen | [[00_Hauptziel]] |
+
+**Noch offen (nicht lösbar ohne Praxis):** Wie streng TikTok bei KI-Stimme/-Bildern wirklich ist, und ob „kein sichtbarer Mensch" bei YouTube schadet. Beides zeigt der Formattest.
+
 ## Vorschläge (Entscheidung bei A + B)
 - [ ] Long-Form Stufe 1 streichen oder auf „neu erzählt, nicht nur aneinandergereiht" ändern **(A)**
 - [ ] TikTok-Regeln für KI/faceless offiziell nachlesen (Creator Rewards Terms, Community Guidelines) **(A)**
