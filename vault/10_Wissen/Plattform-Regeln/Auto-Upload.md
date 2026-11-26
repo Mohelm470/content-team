@@ -6,6 +6,9 @@ tags: [wissen, plattform, tiktok, upload, automatisierung]
 ---
 # Automatische Uploads auf TikTok
 
+> [!check] Entscheidung 26.11.2026
+> **TikTok Studio Planer (0 €, offiziell).** Keine Drittanbieter, kein n8n-Upload, keine eigene App. n8n erst neu prüfen, wenn >3 Videos/Tag oder mehrere Konten.
+
 > [!summary] Kurz
 > - **Jetzt:** TikTok Studio am PC (Planer, gratis, bis 10 Tage voraus). Kein Risiko, kein Aufwand.
 > - **Später:** n8n + Postiz (selbst gehostet, nutzt die offizielle API). Erst wenn das Konto läuft – und die „Entwurf"-Variante, nicht „Direkt posten".

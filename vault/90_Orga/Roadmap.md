@@ -100,7 +100,7 @@ Alle Steckbriefe: `90_Orga/Agenten/` · Tabellen-Ansicht: [[Agenten.base]]
 - [ ] Nach 48 h Zahlen pro Video eintragen (`views_48h`, `retention_%`) **(A)**
 - [ ] Erstes [[Wochen-Review]] durchführen **(B)**
 - [ ] Erste 5 Einträge in `10_Wissen/Hook-Bibliothek/` **(B)**
-- [ ] Posten über TikTok Studio Planer (10 Tage voraus, Nachtzeiten) – Details/Quellen: [[Auto-Upload]] **(A)**
+- [ ] **Entschieden:** Posten über TikTok Studio Planer (10 Tage voraus, Nachtzeiten) – Details/Quellen: [[Auto-Upload]] **(A)**
 - [ ] Optional: ein animiertes Short mit Remotion / `cartoon-3d-short` testen **(B)**
 
 ## Phase 3 – Trend-Recherche automatisieren (Woche 5–7)
