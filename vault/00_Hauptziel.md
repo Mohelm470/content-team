@@ -9,6 +9,17 @@ tags: [orga, ziel]
 > [!important] Ziel
 > **4.000 € Gewinn pro Monat** – 2.000 € pro Person.
 
+## Dauer-Prüffragen (gelten für ALLES, was wir ausarbeiten)
+> [!important] Vor jeder Empfehlung, Idee, Strategie und jedem Skript beantworten
+> 1. **Potenzial:** Bringt das die meisten Views/Auszahlung (RPM, Watchtime, Nachfrage) – besser als die Alternativen? Belegt mit Quelle, Schätzungen als Schätzung markieren.
+> 2. **Sicherheit:** Ist sicher, dass YouTube uns nicht demonetarisiert oder sperrt (und TikTok nicht die Creator Rewards streicht)? Regeln: [[01_Strategie]] → Risiken.
+>
+> Wenn eine Frage mit „nein" oder „unklar" endet: offen sagen, Risiko nennen, bessere Alternative vorschlagen. Kein Schönreden. Bei neuen Regeln der Plattformen beide Fragen für die Nische neu prüfen.
+
+### Stand der Prüfung (26.11.2026)
+- **Potenzial:** Nische 1 hat 32 Punkte, gleichauf mit „Gänsehaut-Geschichte". Der Vorsprung ist klein. Die Daten stammen aus Blogs von Tool-Anbietern, also Schätzungen. **Nicht bewiesen, dass es die beste Nische ist** – der Formattest (erste 30 Videos) entscheidet.
+- **Sicherheit:** Es gibt **keine 100 % Sicherheit**. Faceless ist erlaubt. Das Risiko liegt bei Fließband-Videos, fremden Texten und KI-Stimme ohne eigene Arbeit. Mit den Regeln in [[01_Strategie]] ist es kontrollierbar, aber nicht null. Gänsehaut-Geschichten mit gemeinfreien Bildern sind etwas sicherer als erzählte „wahre Geschichten", weil Quellen und Bilder klar belegbar sind.
+
 ## Einnahmequelle: nur „Geld für Klicks“
 - **Ausschließlich Plattform-Auszahlungen für Views:** TikTok Creator Rewards, YouTube-Partnerprogramm (Shorts), ggf. weitere Plattformen.
 - **Vorerst NICHT:** Kundenaufträge, Affiliate, eigene Produkte.

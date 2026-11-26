@@ -5,6 +5,8 @@ Budget: nur das Claude-Abo. Kostenlose Werkzeuge bevorzugen.
 
 **Hauptziel:** 4.000 €/Monat Gewinn ausschließlich über Plattform-Auszahlungen für Views (TikTok Creator Rewards, YouTube-Partnerprogramm). Details: `vault/00_Hauptziel.md` – vor jeder Strategie-Empfehlung lesen. Strategie: `vault/01_Strategie.md`.
 
+**Zwei Dauer-Prüffragen zu allem (Details in `00_Hauptziel.md`):** (1) Hat das das größte Potenzial für Views/Auszahlung? (2) Ist sicher, dass YouTube/TikTok uns nicht demonetarisieren? Immer beantworten, ehrlich, mit Quelle; bei „unklar" offen sagen.
+
 ## Arbeitsweise mit Claude
 - Antworten auf Deutsch, kurz, einfache Worte. Nicht nachfragen, was in diesem Repo steht – erst hier lesen.
 - Änderungen direkt auf `main` committen und pushen (Obsidian Git synct nur `main`), keine Neben-Branches.
