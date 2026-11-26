@@ -1,7 +1,7 @@
 ---
 owner: A
 status: aktiv
-aktualisiert: 2026-11-25
+aktualisiert: 2026-11-26
 tags: [orga, roadmap]
 ---
 # Roadmap – Faceless Short-Form (TikTok & YouTube Shorts)
@@ -76,8 +76,8 @@ Alle Steckbriefe: `90_Orga/Agenten/` · Tabellen-Ansicht: [[Agenten.base]]
 **Ziel:** Eine Nische, in der Faceless-Videos gut laufen und die uns beiden liegt.
 **Meilenstein M1:** Nische entschieden, Brand-Voice ausgefüllt, Accounts angelegt.
 
-- [ ] [[Nischen-Scout]] ausführen: 5–8 Kandidaten sammeln **(B)**
-- [ ] Kandidaten bewerten (Faceless-tauglich? Genug Stock-Footage? Monetarisierbar? Spaß für uns?) → Top 3 **(B)**
+- [x] [[Nischen-Scout]] ausführen: 5–8 Kandidaten sammeln **(B)** → [[Nischen-Vergleich]]
+- [x] Kandidaten bewerten (Faceless-tauglich? Genug Stock-Footage? Monetarisierbar? Spaß für uns?) → Top 3 **(B)**
 - [ ] Pro Top-Nische 3 erfolgreiche Faceless-Accounts finden und notieren (`10_Wissen/Formate/`) **(A)**
 - [ ] Pro Top-Nische 2–3 Test-Skripte schreiben lassen ([[Creator]] von Hand) **(B)**
 - [ ] Gemeinsame Entscheidung: **eine** Nische festlegen **(Owner: B)**

@@ -3,7 +3,7 @@ owner: B
 rhythmus: einmalig
 ausloeser: von Hand
 phase: 1
-status: geplant
+status: gebaut
 skills: [viral-reel-playbook, defuddle]
 tags: [agent]
 ---
