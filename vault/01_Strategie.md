@@ -17,7 +17,7 @@ tags: [orga, strategie]
 - **Long-Form, Stufe 1 (Monat 1–3):** keine neue Produktion – 8–12 Master-Videos aneinander, hochkant mittig auf 16:9 mit unscharfem Hintergrund, neues Intro + Übergänge.
 - **Long-Form, Stufe 2 (sobald YouTube anzieht):** eigene 8–15-min-Videos, eine große Geschichte mit Tiefe – höchste RPM.
 
-> [!check] Entschieden am 26.11.2026 (A + B)
+> [!check] Entschieden am 26.11.2026 (A + B) – durch Recherche bestätigt, siehe Abschnitt 9
 > Ein Master-Format (9:16, 65–75 s) für alle Plattformen + Long-Form in 2 Stufen.
 
 ## 1. Die Verwertungskette
@@ -82,7 +82,21 @@ Gewinner = höchste **durchschnittliche Wiedergabedauer + Shares**, nicht Likes.
 - **A – Recherche & Technik:** Geschichten finden + Fakten prüfen, Skripte mit KI, Upload & Planung, Zahlen.
 - **B – Kreativ & Produktion:** Stimme, Bilder/Animation, Schnitt, Thumbnails, Long-Form-Compilations.
 
-## 9. Risiken
+## 9. Aktuelle Recherche (26.11.2026) – Anpassungen
+- **TikTok:** Watchtime + Durchschauquote bleiben Signal Nr. 1, danach Saves/Shares. Videos 60–180 s laufen laut Berichten gut → später auch 90–120 s testen.
+- **TikTok-Suche:** gesprochener Text und Caption werden für die Suche ausgewertet → **Suchbegriff in den ersten Satz + Caption** (z. B. „WW2 dog story“).
+- **YouTube „unauthentische Inhalte“:** Massenware nach Schablone (KI-Stimme + immer gleicher Aufbau) wird nicht monetarisiert; Jan. 2026 wurden große KI-Kanäle gelöscht. Gesichtslos ist erlaubt. → **wiedererkennbarer eigener Stil, echte Recherche, Aufbau variieren.**
+- **Compilations:** nur aus eigenen Videos und mit neuem Mehrwert (Intro, Überleitungen, Erzählrahmen).
+- **Marke statt Gesicht:** einheitlicher Look (Farben, Figuren, Thumbnails) wie bei Kurzgesagt → passt zu `cartoon-3d-short`.
+
+## 10. Wo wir selbst aktuell nachschauen
+- TikTok Creator Academy + TikTok Studio (offizielle Regeln, eigene Zahlen)
+- TikTok Creative Center (Trends, Top-Videos)
+- YouTube-Kanäle „Creator Insider“ und „YouTube Creators“, blog.youtube (offizielle Änderungen)
+- tubefilter.com (Branchen-News)
+- Für Strategie: YouTube-Videos von Paddy Galloway und vidIQ
+
+## 11. Risiken
 - **Originalität:** eigene Skripte + eigener Schnitt. Keine Reuploads fremder Clips, kein unbearbeitetes Stock-Material.
 - **YouTube „wiederverwendete Inhalte“:** Compilations nur aus **eigenen** Videos, mit neuem Intro/Übergängen.
 - **Fakten:** wahre Geschichten belegen (Quelle in der Video-Notiz).
