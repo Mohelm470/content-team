@@ -104,6 +104,7 @@ Alle Steckbriefe: `90_Orga/Agenten/` · Tabellen-Ansicht: [[Agenten.base]]
 - [ ] **Entschieden:** Shorts über YouTube Studio planen (gratis, offiziell) – siehe [[Auto-Upload]] **(A)**
 - [ ] Instagram: kein Geld, nur Zusatz-Views, erst nach 2 Wochen TikTok-Betrieb, Planung per Meta Business Suite – siehe [[Auto-Upload]] **(A)**
 - [ ] Optional: ein animiertes Short mit Remotion / `cartoon-3d-short` testen **(B)**
+- [ ] Agenten-Pipeline (Agent liefert fertige Videos, Mensch gibt 5 Min frei + plant) prüfen und in Stufen testen – siehe [[Agenten-Pipeline]] **(A)**
 
 ## Phase 3 – Trend-Recherche automatisieren (Woche 5–7)
 **Ziel:** Jeden Morgen liegt ein fertiges Briefing mit 3–5 Format-Ideen im Vault.
