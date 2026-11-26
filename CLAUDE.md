@@ -12,6 +12,7 @@ Budget: nur das Claude-Abo. Kostenlose Werkzeuge bevorzugen.
 - Änderungen direkt auf `main` committen und pushen (Obsidian Git synct nur `main`), keine Neben-Branches.
 - Entscheidungen und neues Wissen sofort in den Vault schreiben (`00_Hauptziel.md`, `90_Orga/Roadmap.md`), damit neue Chats sie kennen.
 - Tokeneffizient: nur nötige Dateien lesen, keine Sub-Agenten ohne Grund.
+- **Neuer Chat selbst prüfen:** Ist eine Frage ein eigenes Thema (größere Recherche, andere Aufgabe als der laufende Chat), starte selbst eine eigene Sitzung dafür (mit klarem Auftrag, Ergebnis in den Vault) und sag es kurz. Kleine Fragen bleiben im laufenden Chat.
 
 ## Regeln
 - **Neue Skills nur über den Scanner:** `bash setup/scan-skill.sh <github-url>`. Ein Hook blockiert andere Installationswege.
