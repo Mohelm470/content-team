@@ -123,3 +123,29 @@ Alle Angaben von den Anbieter-Seiten oder Vergleichsblogs, **nicht amtlich** –
 ## Offene Punkte (A, sobald der Kanal da ist)
 - [ ] Maximale Vorlaufzeit der Planung testen, und ob Shorts am PC planbar sind
 - [ ] KI-Schalter im Upload-Dialog prüfen
+
+---
+# Instagram (Reels): Geld und Upload prüfen (26.11.2026)
+
+> [!check] Entscheidung
+> **Instagram bringt für uns vorerst kein Geld – nur Zusatz-Views.** Posten nur, wenn es fast nichts kostet: dieselbe Exportdatei, Planung in Meta Business Suite (gratis). Kein Aufwand für eigene Inhalte oder Tools.
+
+## Zahlt Instagram?
+- **Nicht wie TikTok/YouTube.** Das alte „Reels Play Bonus"-Programm ist laut Quellen 2023 ausgelaufen ([Influencer Marketing Hub](https://influencermarketinghub.com/instagram-reels-monetization/), [fluxnote](https://fluxnote.io/guides/instagram-reels-play-bonus-program-status-2026) – schwache Quellen). Aktuelle Boni sind **nur auf Einladung** und können jederzeit enden → **keine Planungsgrundlage.**
+- **Facebook (gehört zu Meta) zahlt:** „Content Monetization", ebenfalls **nur auf Einladung**, keine veröffentlichte Mindestgrenze ([Facebook Creators](https://creators.facebook.com/blog/new-tips-to-help-you-earn-on-facebook-content-monetization)). Meta nennt fast 3 Mrd. $ Auszahlungen 2025, 60 % an Reels ([Tubefilter](https://www.tubefilter.com/2026/03/18/meta-creator-fast-track-payouts/)).
+- **Creator Fast Track (März 2026):** 1.000 $/Monat (ab 100.000 Followern auf IG/TikTok/YouTube), nur USA/Kanada, nur 3 Monate ([Meta](https://about.fb.com/news/2026/03/creator-fast-track-grow-your-audience-earn-money-on-facebook/), [Buffer](https://buffer.com/resources/how-to-make-money-on-facebook/)). **Wir sind in Deutschland → vermutlich nicht berechtigt** (unklar, Quellen sind Zweitberichte).
+- Eine offizielle Instagram-Seite zu heutigen Auszahlungen habe ich **nicht gefunden.**
+- **Später prüfen:** Facebook-Seite + Reels mit derselben Datei, wenn TikTok läuft (Einladung abwarten, kein Muss).
+
+## Upload
+- Instagram-Konto muss **Professional** (Creator) sein. Gratis-Planung in **Meta Business Suite** (offizielles Meta-Werkzeug).
+- Die offizielle API (`instagram_content_publish`) kann Reels veröffentlichen ([Meta-Doku](https://developers.facebook.com/docs/instagram-platform/content-publishing/)); Limit 50 Posts/24 h (andere Quellen: 25 oder 100 → **unklar**). Eine Planungsfunktion hat die API nicht, das Tool hält den Zeitplan selbst. Ob App-Review für ein eigenes Konto nötig ist, steht in den Quellen **nicht** → eigene API-App nicht bauen.
+- Reels mit TikTok-Wasserzeichen werden abgestraft → nur saubere Datei (wie in [[01_Strategie]]).
+
+## Prüffragen
+1. **Potenzial:** Direkt wohl **kein Geld** (nur Einladungen). Nutzen: Zusatz-Views und Follower mit nahezu null Aufwand. Das Hauptziel (Auszahlung) trägt es nicht.
+2. **Sicherheit:** Planung über Meta Business Suite = niedriges Risiko. Für unser Geld (TikTok/YouTube) gibt es keine Gefahr. Bei Wiederverwendung gleicher Videos auf IG gilt: Original-Datei, keine fremden Inhalte. Reichweitenverlust durch Planer: **unklar**, nicht belegt.
+
+## Offene Punkte
+- [ ] Instagram erst nach 2 Wochen TikTok-Betrieb anlegen (Zeit sparen)
+- [ ] Dann im Konto prüfen: Bonus-/Monetarisierungs-Menü sichtbar? Business-Suite-Planer für Reels testen

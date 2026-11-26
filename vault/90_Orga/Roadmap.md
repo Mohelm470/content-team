@@ -102,6 +102,7 @@ Alle Steckbriefe: `90_Orga/Agenten/` · Tabellen-Ansicht: [[Agenten.base]]
 - [ ] Erste 5 Einträge in `10_Wissen/Hook-Bibliothek/` **(B)**
 - [ ] **Entschieden:** Posten über TikTok Studio Planer (10 Tage voraus, Nachtzeiten) – Details/Quellen: [[Auto-Upload]] **(A)**
 - [ ] **Entschieden:** Shorts über YouTube Studio planen (gratis, offiziell) – siehe [[Auto-Upload]] **(A)**
+- [ ] Instagram: kein Geld, nur Zusatz-Views, erst nach 2 Wochen TikTok-Betrieb, Planung per Meta Business Suite – siehe [[Auto-Upload]] **(A)**
 - [ ] Optional: ein animiertes Short mit Remotion / `cartoon-3d-short` testen **(B)**
 
 ## Phase 3 – Trend-Recherche automatisieren (Woche 5–7)

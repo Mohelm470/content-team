@@ -29,3 +29,6 @@ learnings:
 - [ ] Stimme klingt natürlich, keine echt wirkende KI-Person
 - [ ] Nichts Verstörendes, nichts Politisches
 - [ ] Quellen oben eingetragen
+- [ ] Saubere Exportdatei (kein TikTok-Wasserzeichen), nur lizenzfreie Musik eingebrannt
+- [ ] KI-Schalter gesetzt (TikTok/YouTube), wenn realistisch wirkende KI-Bilder/-Stimme; Datei auf C2PA geprüft
+- [ ] Per Studio-Planer hochgeladen (TikTok Studio / YouTube Studio), nie per Bot/Login-Skript – siehe [[Auto-Upload]]
