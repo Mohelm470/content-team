@@ -8,7 +8,7 @@ tags: [orga, strategie]
 
 > [!summary] Kern
 > **1 Geschichte → 4 Verwertungen.** TikTok bringt Reichweite + erstes Geld, YouTube Long-Form bringt das große Geld.
-> Nische (Favorit): **emotionale wahre Geschichten, Englisch, faceless.** Ziel: [[00_Hauptziel]] · Zahlen: [[Auszahlungen]]
+> Nische (entschieden 26.11.2026): **emotionale wahre Geschichten mit Diskussionsfrage am Ende, Englisch, faceless.** Ziel: [[00_Hauptziel]] · Zahlen: [[Auszahlungen]]
 
 ## 0. Ein Master-Video für alle Plattformen
 - **Hochkant 9:16, 1080×1920, 65–75 s** (sicher > 60 s für TikTok, < 3 min für Shorts/Reels).

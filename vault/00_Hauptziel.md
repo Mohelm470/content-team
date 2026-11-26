@@ -1,7 +1,7 @@
 ---
 owner: A
 status: aktiv
-aktualisiert: 2026-11-25
+aktualisiert: 2026-11-26
 tags: [orga, ziel]
 ---
 # Hauptziel
@@ -29,7 +29,7 @@ tags: [orga, ziel]
 ## Noch offen
 | Frage | Antwort |
 |---|---|
-| Nische | offen – Favorit: emotionale wahre Geschichten (Test läuft) |
+| Nische | **entschieden 26.11.2026:** emotionale wahre Geschichten mit Diskussionsfrage am Ende (Englisch, faceless) → [[Nischen-Vergleich]] |
 | Sprache (DE / EN) | **Englisch** |
 | Deadline | so schnell wie möglich; realistisch 9–15 Monate, nicht garantiert |
 | Zeit | je 3–4 Std. pro Tag |

@@ -68,6 +68,9 @@ Warum nicht ganz oben: **Grusel** – Werbekunden meiden es, niedrige RPM. **Psy
 > [!tip] Unser Vorschlag
 > **Nische 1 als Hauptkanal**, die Formate von Nische 3 („Who's wrong?") als *Diskussions-Ende* einbauen und Nische 2 als gelegentliche Abwechslung testen. So testen wir alle drei, ohne drei Accounts.
 
+## Entscheidung
+**26.11.2026: Nische 1 gewählt** – emotionale wahre Geschichten mit Diskussionsfrage am Ende. „Wer hat recht?" als Ende-Format, Gänsehaut-Geschichte gelegentlich testen.
+
 ## Nächster Schritt
 Entscheidung treffen → [[brand-voice]] ausfüllen → Accounts anlegen.
 

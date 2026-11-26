@@ -1,5 +1,5 @@
 # Brand-Voice (noch auszufüllen, sobald die Nische steht)
-- Nische:
+- Nische: emotionale wahre Geschichten mit Diskussionsfrage am Ende (Englisch, faceless)
 - Zielgruppe:
 - Tonalität:
 - Do's:
