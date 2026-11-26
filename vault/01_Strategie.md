@@ -101,3 +101,10 @@ Gewinner = höchste **durchschnittliche Wiedergabedauer + Shares**, nicht Likes.
 - **YouTube „wiederverwendete Inhalte“:** Compilations nur aus **eigenen** Videos, mit neuem Intro/Übergängen.
 - **Fakten:** wahre Geschichten belegen (Quelle in der Video-Notiz).
 - **Plattformregeln ändern sich** → Quartalsweise [[Auszahlungen]] prüfen.
+- **Kein Geld von YouTube vermeiden** (Regel „inauthentic content", ergänzt 26.11.2026):
+  - Nie fremde Texte vorlesen (Reddit, Artikel) – Geschichte selbst neu erzählen, eigene Meinung/Frage am Ende.
+  - Keine Fließband-Videos: Hook, Aufbau und Optik variieren; nicht 30× dieselbe Vorlage mit getauschtem Text.
+  - KI-Stimme ok, aber natürlich klingend und gut geschnitten; keine KI-„Person", die echt wirkt, bei heiklen Themen.
+  - Nichts Verstörendes: keine Gewalt-/Unfallbilder, kein Schock ohne Auflösung.
+  - Kanal-Check vor dem Antrag aufs Partnerprogramm: Die letzten 20 Videos müssen erkennbar eigene Arbeit zeigen (YouTube prüft per Hand).
+  - Rohskripte + Quellen in der Video-Notiz aufheben → Beleg für eigene Arbeit, falls YouTube nachfragt.
