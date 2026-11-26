@@ -10,6 +10,12 @@ tags: [orga, strategie]
 > **1 Geschichte → 4 Verwertungen.** TikTok bringt Reichweite + erstes Geld, YouTube Long-Form bringt das große Geld.
 > Nische (Favorit): **emotionale wahre Geschichten, Englisch, faceless.** Ziel: [[00_Hauptziel]] · Zahlen: [[Auszahlungen]]
 
+## 0. Ein Master-Video für alle Plattformen
+- **Hochkant 9:16, 1080×1920, 65–75 s** (sicher > 60 s für TikTok, < 3 min für Shorts/Reels).
+- Untertitel eingebrannt, **mittig** (unten ~20 % und rechter Rand werden von Buttons verdeckt).
+- Kein Plattform-Wasserzeichen, nur lizenzfreie Musik, kein „folgt mir auf TikTok“.
+- **Long-Form:** keine neue Produktion – 8–12 Master-Videos aneinander, hochkant mittig auf 16:9 mit unscharfem Hintergrund, neues Intro + Übergänge.
+
 ## 1. Die Verwertungskette
 | # | Plattform | Was | Länge | Takt | Zweck |
 |---|---|---|---|---|---|
