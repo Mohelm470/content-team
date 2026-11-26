@@ -92,3 +92,34 @@ Alle Angaben von den Anbieter-Seiten oder Vergleichsblogs, **nicht amtlich** –
 - [ ] Creator-Rewards-Regeln im Konto nach „Planer"/„Drittanbieter" durchsuchen
 - [ ] Postiz-TikTok-Anbindung: Direktpost öffentlich möglich oder nur privat?
 - [ ] Dateien auf C2PA-Daten prüfen (z. B. Export aus KI-Tools)
+
+---
+# YouTube Shorts: Upload prüfen (26.11.2026)
+
+> [!check] Entscheidung
+> **YouTube Studio, geplante Veröffentlichung (0 €, offiziell).** Kein API-Upload, kein n8n, kein Drittanbieter. Gleicher Ablauf wie bei TikTok: einmal pro Woche vorplanen.
+
+## Offizielle Wege
+- **YouTube Studio, „Planen":** Video hochladen, auf privat stellen, Datum/Uhrzeit/Zeitzone wählen. Das gilt auch für Shorts ([YouTube-Hilfe](https://support.google.com/youtube/answer/1270709)). Eine feste Maximal-Vorlaufzeit habe ich nicht gefunden → **unklar**, im echten Kanal testen. Bei einem Strike bleibt ein geplantes Video privat ([Quelle](https://support.google.com/youtube/answer/1270709)).
+- **Mobil:** Eine Quelle sagt, die Planung fehle in der App, andere sagen, sie gehe → **unklar, am PC planen.**
+- **YouTube Data API (`videos.insert`):** Uploads aus nicht geprüften API-Projekten werden laut [Google-Doku](https://developers.google.com/youtube/v3/docs/videos/insert) auf **privat** gesetzt, bis das Projekt ein Audit besteht. Ältere Seitenversionen formulieren das anders → **Stand nicht sicher bestätigt.** Quota: Standard 10.000 Einheiten/Tag ([Revisionsverlauf](https://developers.google.cn/youtube/v3/revision_history?hl=en)). Die Kosten pro Upload (1.600 Einheiten) stammen nur von einem Anbieter ([Ayrshare](https://www.ayrshare.com/solutions/google-api-error-403-unverified-app-how-to-fix-the-audit-pipeline/)) → **unbelegt.** Folge wie bei TikTok: eigene API-App lohnt nicht.
+- **n8n:** Es gibt einen YouTube-Knoten, aber er unterliegt derselben API-Regel (privat bis Audit). **Unklar**, ob das bei einem eigenen Einzelkanal anders läuft. Nicht prüfenswert, solange Studio reicht.
+
+## Drittanbieter
+- Buffer hat laut [Buffer](https://buffer.com/resources/how-to-schedule-youtube-shorts/) einen kostenlosen Weg für Shorts, aber nur 10 Posts pro Kanal in der Gratis-Stufe → für 2–3/Tag zu knapp, und Studio kann dasselbe gratis.
+
+## Risiken
+- **Wichtigstes Risiko ist nicht der Upload-Weg, sondern die Masse.** YouTube hat im Juli 2026 die Regeln zu „inauthentic content" geschärft: Schablonen-Videos, Copy-Paste-KI-Skripte und KI-Personen bei heiklen Themen werden nicht monetarisiert. Die Monetarisierung kann den **ganzen Kanal** treffen ([YouTube-Hilfe](https://support.google.com/youtube/answer/1311392), [Tubefilter](https://www.tubefilter.com/2026/07/13/youtube-inauthentic-content-monetization-policy-update/)). Den genauen YouTube-Text vom Juli habe ich nicht gefunden; **Bezug auf Upload-Tools wird nur abgeleitet** („automatisierte Pipelines"), nicht ausdrücklich genannt.
+- Ein Planer selbst wird in den Quellen nicht als Verstoß genannt. Aber: 2–3 gleich aufgebaute Videos täglich, vollautomatisch veröffentlicht, ist genau das Muster, das auffällt → Aufbau variieren, Skripte und Quellen aufheben (siehe [[01_Strategie]] → Risiken).
+- **KI-Kennzeichnung:** Pflicht bei realistisch wirkenden KI-Szenen/Personen, im Upload-Dialog („Verändert oder synthetisch"). Das Label begrenzt laut [YouTube](https://support.google.com/youtube/answer/14328491) weder Reichweite noch Monetarisierung. YouTube kann es auch selbst setzen. API-Feld dafür: nicht bestätigt.
+- **Wasserzeichen:** saubere Exportdatei, nie die TikTok-Datei (siehe oben).
+- **Musik:** nur lizenzfrei und eingebrannt. Die YouTube-Audiobibliothek ist ein Extra, nicht nötig.
+- **Inoffizielle Uploader/Login-Skripte:** nicht tun, wie bei TikTok.
+
+## Prüffragen
+1. **Potenzial:** Auch hier bringt Auto-Upload keine zusätzlichen Views, nur Konstanz und feste Slots. Shorts zahlen laut [[Auszahlungen]] nur 0,03–0,20 $ pro 1.000 Views; der Wert liegt in Abos und als Zubringer für Long-Form. Kein Hinweis, dass Planen die Reichweite senkt (aber nicht ausgeschlossen: unklar).
+2. **Sicherheit:** Studio-Planung = sehr niedriges Risiko. Das echte Risiko ist „inauthentic content" (Schablone/Masse), unabhängig vom Upload-Weg: **kontrollierbar, nicht null.**
+
+## Offene Punkte (A, sobald der Kanal da ist)
+- [ ] Maximale Vorlaufzeit der Planung testen, und ob Shorts am PC planbar sind
+- [ ] KI-Schalter im Upload-Dialog prüfen
