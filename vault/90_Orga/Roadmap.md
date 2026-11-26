@@ -81,7 +81,7 @@ Alle Steckbriefe: `90_Orga/Agenten/` · Tabellen-Ansicht: [[Agenten.base]]
 - [ ] Pro Top-Nische 3 erfolgreiche Faceless-Accounts finden und notieren (`10_Wissen/Formate/`) **(A)**
 - [ ] Pro Top-Nische 2–3 Test-Skripte schreiben lassen ([[Creator]] von Hand) **(B)**
 - [x] Gemeinsame Entscheidung: **eine** Nische festlegen **(Owner: B)** → Nr. 1 (26.11.2026)
-- [ ] [[brand-voice]] ausfüllen (Zielgruppe, Ton, Do's & Don'ts, 3 Beispiel-Hooks) **(B)**
+- [~] [[brand-voice]] Entwurf steht (26.11.), A + B prüfen **(B)**
 - [ ] TikTok-Account anlegen (Name passend zur Nische, **persönliches Konto** – Business-Konto ist von Creator Rewards ausgeschlossen) **(B)**
 - [ ] YouTube-Kanal anlegen **(A)**
 - [ ] Zugangsdaten sicher teilen – **nicht** im Repo/Vault, sondern im Passwort-Manager **(A)**
