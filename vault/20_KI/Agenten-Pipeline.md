@@ -7,7 +7,7 @@ tags: [ki, agenten, pipeline, automatisierung]
 # Agenten-Pipeline: ein Agent liefert die fertigen Videos
 
 > [!summary] Kurz
-> **Ja, fast alles kann ein Agent.** Die Pipeline plant Themen aus Zahlen, schreibt, prüft Fakten, baut das Video und legt Datei + Caption fertig ab. **Zwei Dinge bleiben beim Menschen:** (1) 5-Minuten-Freigabe pro Video, (2) Hochladen über TikTok Studio / YouTube Studio. Volle Automatik ohne Mensch = Risiko für Creator Rewards und das YouTube-Partnerprogramm.
+> **Ja, fast alles kann ein Agent.** Die Pipeline plant Themen aus Zahlen, schreibt, prüft Fakten, baut das Video und legt Datei + Caption fertig ab. **Zwei Dinge bleiben beim Menschen:** (1) kurze Freigabe pro Video (Ziel ca. 2 Min, siehe Abschnitt 8), (2) Hochladen über TikTok Studio / YouTube Studio. Volle Automatik ohne Mensch = Risiko für Creator Rewards und das YouTube-Partnerprogramm.
 > Kosten: **0 € extra** (nur Claude-Abo + Gratis-Werkzeuge). Zugehörig: [[00_Hauptziel]] · [[01_Strategie]] · [[Auto-Upload]] · [[Roadmap]]
 
 ## 1. Die Pipeline
@@ -113,3 +113,41 @@ flowchart LR
 - [ ] Abo-Verbrauch pro Video messen (nach 5 Videos)
 - [ ] Variations-Katalog (Hook-Typen, Stile, Längen) für den Agenten anlegen
 - [ ] Gratis-TTS wählen und gegen Menschenstimme testen
+
+## 8. Update 26.11.2026: Mensch-Anteil verkleinern (Nachfrage von A)
+
+Ziel: weniger Handarbeit. Ehrlich: **1 Min pro Video ist nicht sicher machbar**, ca. 2 Min schon. Der Rest ist Rechenzeit des Agenten.
+
+### 8a. Zahlen auslesen statt eintragen
+| Plattform | Auslesen durch Agent? | Wie | Stand |
+|---|---|---|---|
+| **YouTube** | **Ja, offiziell** | YouTube Analytics API, nur lesen, eigener Kanal (`channel==MINE`), liefert Views, Ø Wiedergabedauer, Ø Wiedergabe in %, Shares ([Doku](https://developers.google.com/youtube/analytics/sample-requests)). Einmalige Anmeldung (OAuth) durch den Kanalinhaber, danach läuft es allein. | Scope und Token-Laufzeit bei nicht geprüfter App **unklar**, beim Einrichten testen |
+| **TikTok** | **Teilweise** | Display API (`video.list`) liefert `view_count`, `share_count` für eigene öffentliche Videos ([Doku](https://developers.tiktok.com/docs/en/tiktok-api-v1-video-list)). **Keine Wiedergabedauer/Retention** (nicht in den Feldern gefunden). Braucht eigene App + Freigabe durch TikTok → **unklar, ob schnell genehmigt**; Research-API ist nur für Forscher. | Retention nur im TikTok Studio sichtbar |
+| TikTok Studio Retention | **Nein automatisch** | Kein Login-Bot (Sperrrisiko, siehe [[Auto-Upload]]). Ersatz: **1× pro Woche 1 Min** Screenshot/Export der Studio-Übersicht in `media/zahlen/` ablegen; der Agent liest das Bild/die Datei und trägt alles in die Notizen ein. CSV-Export im Studio: **nicht bestätigt**. | unklar |
+
+→ Mensch-Aufwand Zahlen: **von 3 Min auf ca. 1 Min pro Woche**, YouTube ganz ohne.
+
+### 8b. Trends: der Agent sucht selbst
+- **Ohne TikTok-Login, ohne Handarbeit:** YouTube Data API (Shorts-Trends der Nische), Google Trends, Websuche. Das ist offiziell/öffentlich und läuft täglich allein ([[Trend-Scout]]).
+- **TikTok Creative Center:** Test heute: **nicht erreichbar in diesem Cloud-Container** (Host `ads.tiktok.com` vom Netzwerk blockiert, Fehler DNS). Ob die Seite ohne Login lesbare Zahlen liefert, ist **ungetestet**. Ob automatisches Lesen gegen die TikTok-Nutzungsbedingungen verstößt, ist **unklar**. Es gibt keine offizielle API für diese Trendlisten (nicht gefunden).
+- **Plan:** (1) YouTube + Google Trends sofort automatisch. (2) Creative Center im späteren Server-Betrieb (Phase 5) **einmal testen**, nur öffentliche Seiten, ein Abruf pro Tag, kein Login. Geht es nicht, bleibt es bei 5 Min/Woche von Hand **oder wird gestrichen** – die eigenen Zahlen sind ohnehin das bessere Signal.
+
+### 8c. Freigabe von 5 auf ca. 2 Min
+Ein **Prüf-Agent** läuft vor der Freigabe und liefert einen Kurzbericht:
+- Fakten gegen Quellen: grün/gelb/rot, nur Gelbes muss der Mensch lesen.
+- Ähnlichkeit zu den letzten 5 Videos (Hook, Aufbau, Optik): Zahl + Ampel.
+- Geld-Check automatisch vorausgefüllt, C2PA-Prüfung, Länge, Untertitel-Position, Musik-Lizenz.
+- **Hook-Wahl:** Der Agent bietet 3 Hooks an, der Mensch klickt 1 an (10 Sek). Das ist die „eigene Entscheidung" pro Video.
+
+Mensch macht dann: Video auf 1,5× ansehen (~1 Min), Bericht lesen (~30 Sek), Hook wählen, Freigeben. **Ziel ca. 2 Min.**
+- Planen im Studio: ca. 1–2 Min pro Video, aber **gebündelt 1× pro Woche** (Sammelplanung).
+- Warum nicht auf 1 Min / ganz weg: Das ist **meine vorsichtige Wahl, keine Plattform-Regel**. Weder TikTok noch YouTube schreiben „Mensch prüft jedes Video" vor. Verlangt wird Originalität und keine Massenware. Die Freigabe ist unser Beleg und unser Fehlerfilter. Wenn nach 30 Videos die Prüfberichte fast nie etwas finden, kann man auf Stichproben (jedes 2.–3. Video) umstellen. Bis dahin: alle.
+
+### Neue Mensch-Bilanz
+| Was | Vorher | Jetzt (Ziel) |
+|---|---|---|
+| Freigabe pro Video | 5 Min | ca. 2 Min |
+| Planen pro Video | 2 Min | 1–2 Min, 1× pro Woche gebündelt |
+| Zahlen eintragen | 3 Min/Woche | ca. 1 Min/Woche (TikTok-Screenshot), YouTube 0 |
+| Trends kopieren | 5 Min/Woche | 0 (YouTube/Trends-Agent), Creative Center: Test offen |
+| **10 Videos/Woche** | ca. 1,5–2 Std | **ca. 40–50 Min** (Schätzung) |
