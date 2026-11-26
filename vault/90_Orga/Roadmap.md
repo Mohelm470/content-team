@@ -100,6 +100,7 @@ Alle Steckbriefe: `90_Orga/Agenten/` · Tabellen-Ansicht: [[Agenten.base]]
 - [ ] Nach 48 h Zahlen pro Video eintragen (`views_48h`, `retention_%`) **(A)**
 - [ ] Erstes [[Wochen-Review]] durchführen **(B)**
 - [ ] Erste 5 Einträge in `10_Wissen/Hook-Bibliothek/` **(B)**
+- [ ] Posten über TikTok Studio Planer (10 Tage voraus, Nachtzeiten) – Details/Quellen: [[Auto-Upload]] **(A)**
 - [ ] Optional: ein animiertes Short mit Remotion / `cartoon-3d-short` testen **(B)**
 
 ## Phase 3 – Trend-Recherche automatisieren (Woche 5–7)
@@ -137,6 +138,7 @@ Alle Steckbriefe: `90_Orga/Agenten/` · Tabellen-Ansicht: [[Agenten.base]]
 - [ ] Syncthing für den Vault (ersetzt Git-Sync für Notizen) **(A)**
 - [ ] Nächtliches Git-Backup **(A)**
 - [ ] Ollama + Open WebUI als lokale KI (spart Claude-Kontingent für einfache Aufgaben) **(A)**
+- [ ] Auto-Upload als Entwurf per n8n + Postiz nur testweise, erst nach Prüfung der offenen Punkte in [[Auto-Upload]] **(A)**
 - [ ] n8n einrichten, Agenten-Abläufe dorthin umziehen (Skills `n8n-*` sind schon da) **(A)**
 
 ## Phase 6 – Feintuning (frühestens ab einigen hundert Videos)
