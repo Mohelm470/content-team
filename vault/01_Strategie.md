@@ -14,7 +14,11 @@ tags: [orga, strategie]
 - **Hochkant 9:16, 1080×1920, 65–75 s** (sicher > 60 s für TikTok, < 3 min für Shorts/Reels).
 - Untertitel eingebrannt, **mittig** (unten ~20 % und rechter Rand werden von Buttons verdeckt).
 - Kein Plattform-Wasserzeichen, nur lizenzfreie Musik, kein „folgt mir auf TikTok“.
-- **Long-Form:** keine neue Produktion – 8–12 Master-Videos aneinander, hochkant mittig auf 16:9 mit unscharfem Hintergrund, neues Intro + Übergänge.
+- **Long-Form, Stufe 1 (Monat 1–3):** keine neue Produktion – 8–12 Master-Videos aneinander, hochkant mittig auf 16:9 mit unscharfem Hintergrund, neues Intro + Übergänge.
+- **Long-Form, Stufe 2 (sobald YouTube anzieht):** eigene 8–15-min-Videos, eine große Geschichte mit Tiefe – höchste RPM.
+
+> [!check] Entschieden am 26.11.2026 (A + B)
+> Ein Master-Format (9:16, 65–75 s) für alle Plattformen + Long-Form in 2 Stufen.
 
 ## 1. Die Verwertungskette
 | # | Plattform | Was | Länge | Takt | Zweck |
