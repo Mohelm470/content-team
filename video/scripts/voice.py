@@ -5,7 +5,9 @@ Nutzung (auf dem PC):
   pip install -r scripts/requirements-voice.txt
   # Kokoro-Modelldateien einmal laden (Apache-2.0), nach video/models/ legen:
   #   kokoro-v1.0.onnx und voices-v1.0.bin  (Release "model-files-v1.0" von kokoro-onnx)
-  python scripts/voice.py <story-name> [--voice af_sarah] [--speed 1.0]
+  python scripts/voice.py <story-name> [--voice af_sarah] [--speed 0.95]
+  python scripts/voice.py <story-name> --blend "af_sarah:0.6,af_nicole:0.4"   # Stimmen mischen
+  (auch in der Story-JSON: "voiceName", "speed", "blend": "a:0.6,b:0.4")
 
 Ergebnis: public/<name>.wav + Eintrag "voice" und "words" in stories/<name>.json.
 Status 27.11.2026: Ausrichtung (align) getestet, Kokoro/Whisper-Aufrufe NOCH NICHT auf echtem PC getestet.
@@ -44,25 +46,48 @@ def align(script_words, heard):
     return [round(t, 3) for t in times]
 
 
+def parse_blend(text):
+    """'af_sarah:0.6,af_nicole:0.4' -> [('af_sarah',0.6),('af_nicole',0.4)], Gewichte auf Summe 1."""
+    parts = []
+    for item in text.split(","):
+        name, _, wt = item.strip().partition(":")
+        parts.append((name.strip(), float(wt) if wt else 1.0))
+    total = sum(w for _, w in parts)
+    if not parts or total <= 0:
+        raise SystemExit("blend: leer oder Gewichte <= 0")
+    return [(n, w / total) for n, w in parts]
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("name"); ap.add_argument("--voice"); ap.add_argument("--speed", type=float)
+    ap.add_argument("name"); ap.add_argument("--voice"); ap.add_argument("--speed", type=float); ap.add_argument("--blend")
+    ap.add_argument("--out", help="WAV-Pfad statt public/<name>.wav (nur Stimme, keine Wortzeiten)")
     ap.add_argument("--whisper", default="small.en")
     a = ap.parse_args()
     sp = ROOT / "stories" / f"{a.name}.json"
     story = json.loads(sp.read_text(encoding="utf-8"))
     voice = a.voice or story.get("voiceName", "af_sarah")
-    speed = a.speed or story.get("speed", 1.0)
+    speed = a.speed if a.speed is not None else story.get("speed", 1.0)
+    blend = a.blend or (None if a.voice else story.get("blend"))
     import numpy as np, soundfile as sf
     from kokoro_onnx import Kokoro
     k = Kokoro(str(ROOT / "models/kokoro-v1.0.onnx"), str(ROOT / "models/voices-v1.0.bin"))
+    if blend:  # gewichtete Summe der Stimm-Vektoren
+        mix = parse_blend(blend)
+        voice_arg = sum(w * k.get_voice_style(n) for n, w in mix)
+        voice = "+".join(f"{n}:{w:.2f}" for n, w in mix)
+    else:
+        voice_arg = voice
     chunks, sr, pause = [], 24000, 0.35
     for sc in story["scenes"]:
-        samples, sr = k.create(sc["text"], voice=voice, speed=speed, lang="en-us")
+        samples, sr = k.create(sc["text"], voice=voice_arg, speed=speed, lang="en-us")
         chunks += [samples, np.zeros(int(sr * pause), dtype=samples.dtype)]
-    out = ROOT / "public" / f"{a.name}.wav"
-    out.parent.mkdir(exist_ok=True)
+    out = Path(a.out) if a.out else ROOT / "public" / f"{a.name}.wav"
+    out.parent.mkdir(exist_ok=True, parents=True)
     sf.write(out, np.concatenate(chunks), sr)
+    if a.out:
+        print(f"ok (nur Stimme): {out}, Stimme {voice}, Tempo {speed}")
+        return
     from faster_whisper import WhisperModel
     segs, _ = WhisperModel(a.whisper, compute_type="int8").transcribe(str(out), word_timestamps=True, language="en")
     heard = [{"w": w.word.strip(), "t": round(w.start, 3)} for s in segs for w in s.words]

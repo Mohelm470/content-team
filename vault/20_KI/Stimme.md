@@ -57,6 +57,9 @@ Das Skript schreibt `video/public/<name>.wav` und trägt `voice` + `words` ins S
 - **Whisper NICHT getestet:** `faster-whisper` lädt `model.bin` von `cas-server.xethub.hf.co` → **dort gesperrt (HTTP 403)**. Darum keine Wortzeiten, `test-hund.json` unverändert, Stichproben (Whisper-Wort vs. Skript-Wort) und Render mit Stimme **nicht gemacht**. Nächster Schritt: Host `cas-server.xethub.hf.co` in der Umgebung freigeben oder Whisper-Test auf dem PC.
 - **Klang:** Ich kann Audio nicht hören, darum **keine Einschätzung**. Hörproben (af_sarah, am_michael, bf_emma) wurden dem Nutzer geschickt, A + B bewerten selbst.
 
+## Tempo und Stimmen-Mischung (27.11.2026)
+`voice.py` kann jetzt: `--speed 0.95` (Tempo), `--blend "af_sarah:0.6,af_nicole:0.4"` (Stimmen mischen, Gewichte werden auf Summe 1 gesetzt) und `--out <pfad.wav>` (nur Stimme als Hörprobe, ohne Whisper). In der Story-JSON gehen `voiceName`, `speed` und `blend`. Mischen = gewichtete Summe der Kokoro-Stimm-Vektoren, lief ohne Fehler (3 Proben, je ca. 2 s Rechenzeit). **Ob es menschlicher klingt, ist ungehört** (ich kann kein Audio hören): A + B bewerten die 3 Proben. Idee: pro Kanal eine eigene Mischung = eigene Stimme, hilft evtl. gegen "Schablone" (unklar).
+
 ## Dauer-Prüffragen
 1. **Potenzial:** Gute Stimme hält Wiedergabedauer, und die ist Signal Nr. 1. Ob Kokoro oder Mensch besser abschneidet, ist **unklar**, das misst der Test (Strategie §3).
 2. **Sicherheit:** Gratis-Stimme mit sauberer Lizenz = kein Konto-Risiko durch die Quelle. Plattform-Risiko bleibt Schablone/Label, **kontrollierbar, nicht null**.
