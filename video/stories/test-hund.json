@@ -1,0 +1,17 @@
+{
+  "id": "test-hund",
+  "title": "TECHNIK-TEST (kein echter Inhalt, nicht hochladen)",
+  "wps": 2.9,
+  "scenes": [
+    {"set": "field", "light": "golden", "cam": "push", "flash": true, "text": "This is a test story about a dog who waited.",
+     "chars": [{"who": "dog", "x": 0.5, "scale": 1.3, "expr": "happy", "act": "bounce"}]},
+    {"set": "village", "light": "day", "cam": "right", "text": "Every day, a man walked to the village.",
+     "chars": [{"who": "man", "x": 0.42, "scale": 1.2, "act": "walk"}, {"who": "dog", "x": 0.7, "scale": 0.9, "act": "walk"}]},
+    {"set": "snow", "light": "grey", "cam": "pull", "text": "Then the winter came, and he was gone.",
+     "chars": [{"who": "dog", "x": 0.5, "scale": 1.3, "expr": "sad", "flip": true}]},
+    {"set": "city", "light": "night", "cam": "left", "text": "But the dog was still there. Waiting.",
+     "chars": [{"who": "kid", "x": 0.3, "scale": 1.2, "expr": "worried"}, {"who": "dog", "x": 0.62, "scale": 1.2, "expr": "sad"}]},
+    {"set": "sea", "light": "golden", "cam": "push", "text": "Years later, he came home.",
+     "chars": [{"who": "woman", "x": 0.35, "scale": 1.2, "expr": "shock"}, {"who": "man", "x": 0.65, "scale": 1.2, "expr": "happy", "act": "bounce"}]}
+  ]
+}

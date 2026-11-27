@@ -160,4 +160,4 @@ Mensch macht dann: Video auf 1,5× ansehen (~1 Min), Bericht lesen (~30 Sek), Ho
 - **Rechenzeit laut Skill:** 2K-Render ca. 4 Bilder/Sek = ca. 10 Min für 67 s auf einem normalen PC. Dieser Cloud-Container hat 4 CPU, keine GPU → 3D-Render hier deutlich langsamer (nicht getestet).
 - **Passt schlecht zu uns:** Jedes Thema braucht eine eigene 3D-Welt (Stadt, Kamera-Plan, Figuren-Rollen). Unsere Nische (Helden, Tiere, Schicksale) wechselt Ort und Zeit pro Video. Bei 2–3 Videos pro Tag zu schwer. Das Skill-Rezept nutzt zudem viele Opus-Prüfläufe pro Video → Abo-Verbrauch hoch (nicht gemessen).
 - **Remotion-Lizenz:** noch ungeklärt (siehe Offene Punkte).
-- **Vorschlag:** leichter 2D-Baukasten in Remotion (gemalte Szenenbilder + Cartoon-Figuren-Karten aus `toon.ts`, Kamerafahrt, Untertitel, Ton) und das 3D-Rezept nur für seltene Spezial-Videos. Entscheidung offen (A + B).
+- **Entschieden 27.11.2026 (A + B): leichter 2D-Baukasten.** Läuft als v0, siehe [[Video-Baukasten]]. 3D-Rezept nur für seltene Spezial-Videos.
