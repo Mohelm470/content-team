@@ -117,6 +117,7 @@ Alle Steckbriefe: `90_Orga/Agenten/` · Tabellen-Ansicht: [[Agenten.base]]
   - Ergebnis: Markdown-Notiz in `10_Wissen/Trends/JJJJ-MM-TT.md`
 - [ ] Eigenen Skill vor Benutzung scannen: `bash setup/scan-skill.sh ./pfad/zum/skill` **(A)**
 - [ ] [[Format-Zerleger]] als Skill oder fester Prompt mit Bewertungsformel (Outlier-Faktor, Velocity, Nachstellbarkeit, Nischen-Fit) **(A)**
+- [x] Wöchentliche Algorithmus-Prüfung läuft automatisch (donnerstags 19:43 Uhr, Ergebnis in [[Algorithmus]] → Änderungslog, rechtzeitig vor dem Freitags-Review) **(A)**
 - [ ] Algorithmus-Wissen in Trend-Scout/Format-Zerleger/Performance-Analyst einbauen: Signale, Kennzahlen (Wiedergabe-%, Shares/1000, Outlier-Faktor) und Bewertungsformel aus [[Algorithmus]] **(A)**
 - [ ] Geplante Aufgaben in Claude Code anlegen: Trend-Scout → Format-Zerleger → [[Morgen-Briefing]] **(A)**
 - [ ] Briefing 1 Woche testen, Feedback von B einholen **(A)**
