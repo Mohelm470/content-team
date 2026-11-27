@@ -12,7 +12,7 @@ Teil von [[Agenten-Pipeline]] (Schritt 5) und [[Video-Baukasten]]. Frage: Gratis
 > 1. **Test-Arm A (Standard):** **Kokoro-82M** lokal (0 €, Apache-2.0). Dazu **Whisper lokal** für die Wortzeiten (`words.json`).
 > 2. **Test-Arm B:** echte Menschenstimme (A oder B spricht ein). Vergleich laut [[01_Strategie]] §3: je 10 Videos, Wiedergabedauer und Shares.
 > 3. **Nicht nehmen:** `edge-tts` (inoffizieller Microsoft-Zugang), TikTok-Standard-Stimmen, Coqui XTTS.
-> **Nicht getestet:** In der Cloud-Sitzung sind `huggingface.co` und GitHub-Downloads gesperrt, Modelle ließen sich nicht laden. Test läuft auf einem eurer PCs (Remotion rendert dort ohnehin).
+> **Status:** Kokoro läuft (Cloud-Test 27.11.). Whisper-Modell kam nicht durch: Host `cas-server.xethub.hf.co` gesperrt, siehe unten.
 
 ## Optionen
 | Option | Kosten | Lizenz / Risiko | Qualität | Urteil |
@@ -48,6 +48,14 @@ Das Skript schreibt `video/public/<name>.wav` und trägt `voice` + `words` ins S
 2. ✅ Whisper lokal → Wortzeiten → `words` ins Story-JSON (der Baukasten liest `voice` und `words` schon, siehe [[Video-Baukasten]]).
 3. Musik leise darunter (lizenzfrei), Stimme zuerst, Musik danach.
 4. Test auf PC: 3 Stimmen × 1 Skript, Hörprobe durch A + B, besten Klang festlegen.
+
+## Test in der Cloud-Sitzung (27.11.2026)
+- **Python 3.13.18**; `pip install -r scripts/requirements-voice.txt` ohne Fehler: kokoro-onnx 0.6.1, faster-whisper 1.2.1, onnxruntime 1.29.0, numpy 2.5.3, soundfile 0.14.0.
+- **Modelldateien:** `kokoro-v1.0.onnx` (326 MB) und `voices-v1.0.bin` (28 MB) von GitHub geladen, liegen in `video/models/` (ignoriert).
+- **Kokoro funktioniert:** Der `voice.py`-Code für Kokoro lief ohne Änderung. Die WAV für test-hund (ca. 18 s mit Pausen) war in unter 15 s fertig, CPU, kein Fehler. Je ca. 11 s Hörprobe: ca. 2 s Rechenzeit.
+- **Vorhandene Stimmen:** af_sarah, am_michael, bf_emma, dazu af_heart, af_bella, am_adam, bm_george und viele weitere (auch andere Sprachen).
+- **Whisper NICHT getestet:** `faster-whisper` lädt `model.bin` von `cas-server.xethub.hf.co` → **dort gesperrt (HTTP 403)**. Darum keine Wortzeiten, `test-hund.json` unverändert, Stichproben (Whisper-Wort vs. Skript-Wort) und Render mit Stimme **nicht gemacht**. Nächster Schritt: Host `cas-server.xethub.hf.co` in der Umgebung freigeben oder Whisper-Test auf dem PC.
+- **Klang:** Ich kann Audio nicht hören, darum **keine Einschätzung**. Hörproben (af_sarah, am_michael, bf_emma) wurden dem Nutzer geschickt, A + B bewerten selbst.
 
 ## Dauer-Prüffragen
 1. **Potenzial:** Gute Stimme hält Wiedergabedauer, und die ist Signal Nr. 1. Ob Kokoro oder Mensch besser abschneidet, ist **unklar**, das misst der Test (Strategie §3).
