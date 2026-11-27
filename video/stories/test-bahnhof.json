@@ -1,0 +1,32 @@
+{
+  "id": "test-bahnhof",
+  "title": "TECHNIK-TEST (kein echter Inhalt, nicht hochladen)",
+  "test": true,
+  "created": "2026-11-27",
+  "variant": {"hook": "countdown", "length": 90, "sceneStyle": "fast-cut", "look": "pop", "perspective": "second-person"},
+  "wps": 3.1,
+  "scenes": [
+    {"set": "station", "light": "day", "cam": "whip", "text": "You have ten seconds. This is only a test.",
+     "overlay": [{"kind": "timer", "from": 10, "to": 0, "text": "SECONDS LEFT"}],
+     "props": [{"kind": "clock", "x": 0.85, "layer": "back", "scale": 2.4}, {"kind": "suitcase", "x": 0.2, "layer": "front"}],
+     "chars": [{"who": "man", "x": 0.4, "scale": 1.15, "outfit": "uniform", "hat": "helmet", "expr": "determined", "pose": "salute", "extra": ["medal"]}, {"who": "dog", "x": 0.75, "breed": "spotted", "expr": "happy", "act": "bounce"}]},
+    {"set": "city", "light": "night", "cam": "dolly", "text": "Test scene. City at night, people on the street.",
+     "overlay": {"kind": "date", "text": "NOV 27, 2026", "sub": "TEST"},
+     "props": [{"kind": "lamp", "x": 0.12, "layer": "mid"}, {"kind": "car", "x": 0.75, "layer": "mid"}],
+     "chars": [{"who": "woman", "x": 0.3, "outfit": "suit", "hair": "ponytail", "pose": "point", "expr": "smirk", "extra": ["glasses"]}, {"who": "teen", "x": 0.62, "outfit": "hoodie", "hat": "cap", "pose": "pocket", "expr": "neutral", "act": "nod"}]},
+    {"set": "desert", "light": "golden", "cam": "left", "text": "Test scene. A horse runs through the desert.",
+     "props": [{"kind": "cactus", "x": 0.15, "layer": "mid"}, {"kind": "rock", "x": 0.9, "layer": "front"}],
+     "chars": [{"who": "horse", "x": 0.55, "scale": 0.95, "act": "run"}, {"who": "bird", "x": 0.25, "act": "fly", "z": 0.3}]},
+    {"set": "mountain", "light": "day", "cam": "up", "text": "Test scene. Before and after, side by side.",
+     "label": "THEN",
+     "chars": [{"who": "man", "x": 0.5, "scale": 1.1, "expr": "sad", "outfit": "shirt", "pose": "stand"}],
+     "split": {"set": "farm", "light": "golden", "label": "NOW", "chars": [{"who": "oldman", "x": 0.5, "scale": 1.1, "expr": "happy", "pose": "wave", "extra": ["cane", "glasses", "mustache"]}]}},
+    {"set": "ruins", "light": "grey", "cam": "push", "text": "Test scene. One detail matters. Look here.",
+     "overlay": [{"kind": "circle", "x": 0.68, "y": 0.8, "text": "THIS"}],
+     "props": [{"kind": "gravestone", "x": 0.25, "layer": "mid", "label": "TEST"}],
+     "chars": [{"who": "kid", "x": 0.4, "expr": "angry", "outfit": "overalls", "hair": "spiky"}, {"who": "dog", "x": 0.7, "breed": "pup", "hold": "bone", "expr": "sad"}]},
+    {"set": "street", "light": "day", "cam": "pull", "text": "And the end. Confetti. Test complete.",
+     "fx": ["confetti"], "overlay": {"kind": "stamp", "text": "TEST OK"},
+     "chars": [{"who": "baby", "x": 0.25, "expr": "laugh", "act": "bounce"}, {"who": "woman", "x": 0.55, "outfit": "apron", "hair": "bun", "pose": "armsup", "expr": "laugh", "skin": 3}, {"who": "man", "x": 0.82, "z": 0.2, "outfit": "overalls", "hat": "brimhat", "pose": "think", "expr": "smirk", "skin": 4}]}
+  ]
+}

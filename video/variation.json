@@ -1,0 +1,38 @@
+{
+  "_info": "Variations-Katalog. Regeln: variation.md. Werte müssen zu src/types.ts (Variant) passen.",
+  "hook": {
+    "question": "Frage, die erst am Ende beantwortet wird. Szene 1: overlay question, cam focus/push.",
+    "shock-fact": "Unglaubliche Zahl/Tatsache zuerst. Szene 1: overlay counter oder stamp, in flash.",
+    "in-medias-res": "Start im spannendsten Moment, dann Rückblick. Szene 1: cam shake/whip, fx; Szene 2 overlay date (Rückblick).",
+    "countdown": "Zeitdruck. Szene 1: overlay timer (from→to), cam whip.",
+    "before-after": "Vorher/Nachher nebeneinander. Szene 1: split mit label.",
+    "quote": "Ein Satz einer Figur. Szene 1: say/think-Blase + cam focus, set void.",
+    "mystery-object": "Ein Gegenstand im Fokus (Brief, Foto, Knochen). Szene 1: Requisite + overlay circle/arrow.",
+    "date-place": "Ort und Zeit wie in einer Doku. Szene 1: overlay date oder place/map, cam pull."
+  },
+  "length": {"65": "ca. 185 Wörter bei wps 2.9", "90": "ca. 255 Wörter bei wps 2.9"},
+  "sceneStyle": {
+    "wide-epic": "weite Bilder, kleine Figuren (z 0.3–0.6), viel Ort, Übergänge fade/zoom",
+    "close-emotional": "große Figuren, Gesichter, cam focus, ruhige Übergänge (fade/blink)",
+    "storybook": "Märchenbuch: iris/wipe/ink, cam drift, Look paper/pastel passt gut",
+    "documentary": "Doku: date/place/map/label-Einblendungen, harte Schnitte, slide",
+    "fast-cut": "kurze Szenen (≤ 4 s), whip/shake, viele Ortswechsel"
+  },
+  "look": {
+    "paper": "warmes Papier, braune Linie, runde Schrift",
+    "pop": "kräftige Farben, Comic-Schrift, Raster-Punkte, Schatten",
+    "dusk": "violett-orange Stimmung, schmale Großschrift",
+    "chalk": "helle Linien auf dunkler Tafel-Stimmung, Kasten-Untertitel",
+    "mono": "fast schwarz-weiß, rote Akzente, Raster",
+    "pastel": "weich und hell, Wörter erscheinen nacheinander",
+    "ember": "warm-dunkel, Glut, Kasten-Untertitel"
+  },
+  "perspective": {
+    "narrator": "Erzähler von außen (er/sie)",
+    "first-person": "Ich-Erzähler – nur wenn eine echte Quelle (Brief, Tagebuch, Interview) das trägt",
+    "second-person": "Du-Form: 'Stell dir vor, du bist …'",
+    "witness": "Ein Zeuge erzählt (Nachbar, Enkel, Arzt) – nur belegte Zeugen",
+    "animal-pov": "aus Sicht des Tieres (klar als Erzählform erkennbar)"
+  },
+  "rules": {"never_same_as_previous": ["hook", "sceneStyle", "look"], "max_in_a_row": {"length": 2, "perspective": 2}, "max_score_previous": 55, "max_score_last5": 70, "history": 5}
+}

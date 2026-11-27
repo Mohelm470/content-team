@@ -1,0 +1,26 @@
+{
+  "id": "test-leuchtturm",
+  "title": "TECHNIK-TEST (kein echter Inhalt, nicht hochladen)",
+  "test": true,
+  "created": "2026-11-27",
+  "variant": {"hook": "question", "length": 65, "sceneStyle": "close-emotional", "look": "dusk", "perspective": "first-person"},
+  "wps": 2.8,
+  "scenes": [
+    {"set": "void", "light": "dusk", "cam": "focus", "focus": 0, "text": "Why did my grandmother light a lamp every night?",
+     "overlay": {"kind": "question"},
+     "chars": [{"who": "oldwoman", "x": 0.5, "scale": 1.25, "expr": "worried", "hat": "headscarf", "pose": "hold", "hold": "lantern", "act": "breathe", "look": "up"}]},
+    {"set": "harbor", "light": "dusk", "cam": "drift", "text": "Test scene. A harbor, two boats, and a cat.",
+     "props": [{"kind": "boat", "x": 0.75, "layer": "mid"}, {"kind": "crate", "x": 0.12, "layer": "front"}, {"kind": "barrel", "x": 0.95, "layer": "front"}],
+     "chars": [{"who": "cat", "x": 0.35, "scale": 1.2, "breed": "tabby", "pose": "sit", "expr": "sleepy"}, {"who": "man", "x": 0.68, "z": 0.5, "outfit": "coat", "hat": "beanie", "extra": ["beard"], "act": "walk"}]},
+    {"set": "room", "light": "lamp", "cam": "still-ish", "text": "Test scene. Inside, warm light, a letter on the table.",
+     "props": [{"kind": "table", "x": 0.7, "layer": "mid", "scale": 1.3}, {"kind": "clock", "x": 0.2, "layer": "back", "scale": 2}],
+     "chars": [{"who": "kid", "x": 0.38, "scale": 1.3, "outfit": "hoodie", "hair": "curly", "expr": "shock", "pose": "hold", "hold": "letter", "extra": ["freckles"], "exprAt": [{"t": 1.2, "expr": "cry"}]}]},
+    {"set": "sea", "light": "storm", "cam": "shake", "in": "blink", "text": "Test scene. Storm on the sea. Rain and lightning.",
+     "props": [{"kind": "boat", "x": 0.5, "layer": "back", "scale": 1.2}],
+     "chars": [{"who": "oldwoman", "x": 0.3, "scale": 1.2, "expr": "scared", "hat": "headscarf", "pose": "armsup"}, {"who": "cat", "x": 0.7, "scale": 1, "breed": "black", "expr": "shock", "act": "shiver"}]},
+    {"set": "field", "light": "dawn", "cam": "push", "text": "Test scene. Morning. Everyone is home.",
+     "fx": ["sparkles"],
+     "props": [{"kind": "house", "x": 0.82, "layer": "mid"}, {"kind": "flowers", "x": 0.1, "layer": "front"}],
+     "chars": [{"who": "oldwoman", "x": 0.3, "scale": 1.15, "expr": "happy", "pose": "hug", "hat": "headscarf"}, {"who": "man", "x": 0.62, "scale": 1.15, "expr": "laugh", "outfit": "coat", "extra": ["beard"], "pose": "wave", "say": "I'm back!"}]}
+  ]
+}

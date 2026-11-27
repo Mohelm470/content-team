@@ -1,0 +1,421 @@
+{
+ "id": "katalog",
+ "title": "TECHNIK-TEST Katalog (nicht hochladen)",
+ "test": true,
+ "wps": 1.2,
+ "variant": {
+  "hook": "question",
+  "length": 65,
+  "sceneStyle": "documentary",
+  "look": "paper",
+  "perspective": "narrator"
+ },
+ "scenes": [
+  {
+   "set": "field",
+   "light": "day",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "field day.",
+   "chars": [
+    {
+     "who": "man",
+     "outfit": "suit",
+     "hair": "short",
+     "pose": "point",
+     "expr": "determined",
+     "extra": [
+      "glasses"
+     ],
+     "x": 0.3
+    },
+    {
+     "who": "dog",
+     "breed": "floppy",
+     "expr": "happy",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "village",
+   "light": "golden",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "village golden.",
+   "chars": [
+    {
+     "who": "woman",
+     "outfit": "dress",
+     "hair": "long",
+     "pose": "wave",
+     "expr": "happy",
+     "x": 0.3
+    },
+    {
+     "who": "cat",
+     "breed": "tabby",
+     "expr": "neutral",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "sea",
+   "light": "night",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "sea night.",
+   "chars": [
+    {
+     "who": "kid",
+     "outfit": "sweater",
+     "hair": "curly",
+     "pose": "armsup",
+     "expr": "laugh",
+     "extra": [
+      "freckles"
+     ],
+     "x": 0.3
+    },
+    {
+     "who": "dog",
+     "breed": "pointy",
+     "expr": "sad",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "forest",
+   "light": "grey",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "forest grey.",
+   "chars": [
+    {
+     "who": "oldman",
+     "outfit": "coat",
+     "hat": "brimhat",
+     "pose": "stand",
+     "expr": "sad",
+     "extra": [
+      "cane",
+      "mustache"
+     ],
+     "x": 0.3
+    },
+    {
+     "who": "horse",
+     "scale": 0.8,
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "snow",
+   "light": "dawn",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "snow dawn.",
+   "chars": [
+    {
+     "who": "teen",
+     "outfit": "hoodie",
+     "hat": "hood",
+     "pose": "pocket",
+     "expr": "smirk",
+     "x": 0.3
+    },
+    {
+     "who": "cat",
+     "breed": "black",
+     "pose": "sit",
+     "expr": "shock",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "city",
+   "light": "dusk",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "city dusk.",
+   "chars": [
+    {
+     "who": "oldwoman",
+     "outfit": "robe",
+     "hair": "bun",
+     "pose": "think",
+     "expr": "worried",
+     "extra": [
+      "glasses"
+     ],
+     "x": 0.3
+    },
+    {
+     "who": "dog",
+     "breed": "spotted",
+     "pose": "lie",
+     "expr": "sleepy",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "desert",
+   "light": "storm",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "desert storm.",
+   "chars": [
+    {
+     "who": "man",
+     "outfit": "uniform",
+     "hat": "helmet",
+     "pose": "salute",
+     "expr": "determined",
+     "extra": [
+      "medal"
+     ],
+     "x": 0.3
+    },
+    {
+     "who": "bird",
+     "act": "fly",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "mountain",
+   "light": "lamp",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "mountain lamp.",
+   "chars": [
+    {
+     "who": "woman",
+     "outfit": "apron",
+     "hat": "headscarf",
+     "pose": "hold",
+     "hold": "bowl",
+     "expr": "love",
+     "skin": 3,
+     "x": 0.3
+    },
+    {
+     "who": "dog",
+     "breed": "pup",
+     "hold": "ball",
+     "expr": "happy",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "harbor",
+   "light": "day",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "harbor day.",
+   "chars": [
+    {
+     "who": "man",
+     "outfit": "overalls",
+     "hat": "cap",
+     "pose": "cross",
+     "expr": "angry",
+     "extra": [
+      "beard"
+     ],
+     "skin": 4,
+     "x": 0.3
+    },
+    {
+     "who": "dog",
+     "breed": "floppy",
+     "expr": "happy",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "room",
+   "light": "golden",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "room golden.",
+   "chars": [
+    {
+     "who": "woman",
+     "outfit": "sweater",
+     "hair": "ponytail",
+     "pose": "facepalm",
+     "expr": "cry",
+     "skin": 2,
+     "x": 0.3
+    },
+    {
+     "who": "cat",
+     "breed": "tabby",
+     "expr": "neutral",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "street",
+   "light": "night",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "street night.",
+   "chars": [
+    {
+     "who": "kid",
+     "outfit": "overalls",
+     "hat": "beanie",
+     "pose": "reach",
+     "expr": "shock",
+     "x": 0.3
+    },
+    {
+     "who": "dog",
+     "breed": "pointy",
+     "expr": "sad",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "station",
+   "light": "grey",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "station grey.",
+   "chars": [
+    {
+     "who": "man",
+     "outfit": "shirt",
+     "hair": "spiky",
+     "pose": "hug",
+     "expr": "scared",
+     "extra": [
+      "bandage"
+     ],
+     "skin": 1,
+     "x": 0.3
+    },
+    {
+     "who": "horse",
+     "scale": 0.8,
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "river",
+   "light": "dawn",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "river dawn.",
+   "chars": [
+    {
+     "who": "woman",
+     "outfit": "coat",
+     "hat": "beret",
+     "pose": "kneel",
+     "expr": "sleepy",
+     "extra": [
+      "scarf"
+     ],
+     "x": 0.3
+    },
+    {
+     "who": "cat",
+     "breed": "black",
+     "pose": "sit",
+     "expr": "shock",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "ruins",
+   "light": "dusk",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "ruins dusk.",
+   "chars": [
+    {
+     "who": "baby",
+     "pose": "sit",
+     "expr": "happy",
+     "x": 0.3
+    },
+    {
+     "who": "dog",
+     "breed": "spotted",
+     "pose": "lie",
+     "expr": "sleepy",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "farm",
+   "light": "storm",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "farm storm.",
+   "chars": [
+    {
+     "who": "oldman",
+     "outfit": "sweater",
+     "hair": "bald",
+     "pose": "sit",
+     "expr": "neutral",
+     "extra": [
+      "beard",
+      "glasses"
+     ],
+     "x": 0.3
+    },
+    {
+     "who": "bird",
+     "act": "fly",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "set": "void",
+   "light": "lamp",
+   "cam": "still-ish",
+   "in":"cut",
+   "text": "void lamp.",
+   "chars": [
+    {
+     "who": "teen",
+     "outfit": "shirt",
+     "hair": "short",
+     "pose": "wave",
+     "expr": "happy",
+     "extra": [
+      "bag"
+     ],
+     "skin": 4,
+     "x": 0.3
+    },
+    {
+     "who": "dog",
+     "breed": "pup",
+     "hold": "ball",
+     "expr": "happy",
+     "x": 0.72
+    }
+   ]
+  }
+ ]
+}
