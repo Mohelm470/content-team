@@ -97,11 +97,13 @@ flowchart LR
 | Hauptrisiko | Schablonen-Muster (YouTube), „zu viel KI" (TikTok, unklar), falsche Fakten, Konto-Sperre bei Bot-Upload (vermieden) |
 | Rest-Risiko | Nicht null. Eine Person darf nie „nur durchwinken" – Freigabe ernst nehmen |
 
-## 6. Aufbau in Stufen (nach Roadmap)
-1. **Jetzt (Phase 2):** Pipeline von Hand mit Claude: Schritte 3–6 testen, Remotion-Baukasten aus `cartoon-3d-short` ableiten. Ziel: 10 Videos.
-2. **Phase 3:** `trend-scout` + [[Morgen-Briefing]] automatisch (geplante Aufgabe). Agent liefert täglich 1–2 fertige Skriptentwürfe.
-3. **Phase 4 (ab ~30 Videos):** eigene Zahlen steuern die Themenwahl; Vergleichstests aus [[01_Strategie]] (Stimme, Aufbau) laufen mit.
-4. **Phase 5:** Server, evtl. n8n – aber **Upload bleibt Studio**.
+## 6. Aufbau in Stufen (geändert 27.11.2026: Video-Agent zuerst)
+Grund: Der Video-Agent (Skript, Stimme, Bilder, Schnitt) braucht am längsten zum Tunen und entscheidet über die Qualität. Trend- und Zahlen-Agenten brauchen erst ca. 30 echte Videos mit eigenen Zahlen.
+1. **Video-Agent bauen (Phase 2):** fester Remotion-Baukasten aus `cartoon-3d-short`, Skript-Regeln, Variations-Katalog, Prüfbericht. Themen vorerst von Hand (1 pro Video aus dem Formattest A/B/C).
+2. **10 Videos damit machen:** jedes mit Freigabe, nach jedem Video den Agenten verbessern. **Nicht im Leerlauf bauen, früh posten**: die Zeit für 10.000 Follower / 100.000 Views läuft erst ab dem ersten Post.
+3. **Danach (Phase 3):** `trend-scout` + [[Morgen-Briefing]] automatisch, YouTube-Zahlen per API.
+4. **Phase 4 (ab ~30 Videos):** eigene Zahlen steuern die Themenwahl; Vergleichstests aus [[01_Strategie]] (Stimme, Aufbau) laufen mit.
+5. **Phase 5:** Server, evtl. n8n – aber **Upload bleibt Studio**.
 
 ## 7. Dauer-Prüffragen
 1. **Potenzial:** Die Pipeline bringt **keine zusätzlichen Views von selbst**. Sie bringt Menge, Konstanz und datengetriebene Wahl. Views kommen aus Hook, Watchtime, Shares ([[01_Strategie]]). Datenlage zu „welche Formate zahlen": Tool-Blogs, Schätzungen. **Unklar**, ob datengetriebene Auswahl besser ist als gutes Bauchgefühl, bevor ~30 Videos eigene Zahlen liefern. Vorteil: wenig Menschenzeit → mehr Videos/Tests möglich.
