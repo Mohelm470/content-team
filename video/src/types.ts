@@ -69,6 +69,8 @@ export type Scene = {
   split?: SplitSide;   // Vorher/Nachher: rechte Bildhälfte zeigt eine zweite Szene
   label?: string;      // optionaler Text für Split links (z. B. "1944")
   seed?: number;       // anderer Zufall für Hügel/Wolken/Bäume
+  zoom?: number | false; // sanfter Extra-Zoom (1.0–1.33), false = aus; Standard: 1.12 bei Szenen ≥ 3 s ohne eigene Kamerafahrt
+  fadeOut?: number | false; // Frames Ausblenden vor hartem Schnitt (6–12, Standard 8), false = aus
 };
 
 // ---- Variation (siehe variation.md / variation.json) ----

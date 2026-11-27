@@ -25,3 +25,18 @@ Quelle: `reference/motion-vocabulary.md` aus [anything2explainer](https://github
 ## Prüffragen
 1. **Views:** Die Zahlen (Kamera-Rate, Frames) kommen aus einem Erklärvideo-Projekt, **nicht aus Shorts-Daten**. Ob das mehr Wiedergabedauer bringt: **unklar**, im 10-Videos-Test messen.
 2. **Demonetarisierung:** Eigene Bewegung ist neutral. Gleiche Bewegung in jedem Video = Schablone, darum pro Video variieren. Plattform-Wirkung: **unklar**.
+
+## Gebaut am 27.11.2026 (Ideen 1–3, selbst geschrieben, kein Fremdcode)
+Code: `video/src/Video.tsx` (`motion`, `zoomOf`), Felder in `video/src/types.ts`. 2D, kein neuer Paketbedarf.
+1. **Sanfter Zoom (Ideen 1+2):** 36 Frames, endet ca. 1 s vor Szenenende, danach Stillstand. Standard automatisch: 1,12× bei Szenen ≥ 3 s, die keine eigene Kamerafahrt haben (`cam` nicht push/pull/focus/dolly/whip). Max 1 pro Szene.
+2. **Ausblenden vor hartem Schnitt (Idee 3):** Figuren und Requisiten blenden die letzten 8 Frames auf 0 aus und sinken 8 px. Nur wenn die nächste Szene mit `cut` oder `flash` beginnt (bei Fade/Slide usw. nicht nötig).
+3. **Einheitlicher Eintritt (Idee 4):** Bei `cut`/`flash` blenden Figuren und Requisiten in 8 Frames ein und steigen 10 px auf. Szene 1 bleibt sofort sichtbar (Vorschaubild).
+
+**In der Story-JSON (alles optional, pro Szene):**
+- `"zoom": 1.2` → eigener Zoom (max 1,33, wird gekappt). `"zoom": false` → aus.
+- `"fadeOut": 10` → Ausblenden-Länge in Frames (6–12). `"fadeOut": false` → aus.
+- Ohne Felder gilt der Standard oben. Alte Stories laufen weiter, sehen aber leicht anders aus.
+
+**Test:** `test-hund.json`, Standbilder bei 1,0 / 3,1 / 4,0 / 4,2 s gerendert, TypeScript ohne Fehler. Bei 4,0 s ist der Hund halb ausgeblendet, bei 3,1 s voll sichtbar. **Kein Video gerendert, Whisper-Wortzeiten fehlen** (siehe [[Stimme]]), Zeiten sind die Auto-Zeiten. Wie der Zoom in Bewegung aussieht: nicht gesehen, am PC ansehen.
+
+**Prüffragen zu dieser Änderung:** (1) Views/Wiedergabedauer: **unklar**, kein Beleg aus Shorts-Daten, im 10-Videos-Test messen (mit/ohne `zoom: false`). (2) Demonetarisierung: Bewegung ist eigene Arbeit, kein Risiko bekannt, aber derselbe Standard in jedem Video ist Schablone → pro Video `zoom`/`fadeOut` variieren. Plattform-Wirkung: **unklar**.

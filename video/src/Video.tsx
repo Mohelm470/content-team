@@ -20,7 +20,7 @@ const autoFx = (sc: {set: string; light: string; fx?: Fx[]}): Fx[] => sc.fx ?? [
 ];
 
 // Eine Bühne: Hintergrund, Requisiten (hinten/mitte/vorne), Figuren nach Tiefe.
-const Stage: React.FC<{sc: SplitSide & {props?: Scene["props"]}; p: number; t: number; tl: number; px: number; seed: number; charK: number}> = ({sc, p, t, tl, px, seed, charK}) => {
+const Stage: React.FC<{sc: SplitSide & {props?: Scene["props"]}; p: number; t: number; tl: number; px: number; seed: number; charK: number; vis?: number; dy?: number}> = ({sc, p, t, tl, px, seed, charK, vis = 1, dy = 0}) => {
   const props = sc.props ?? [];
   const layer = (l: string, d: number, gy: number, s0: number) => props.filter((q) => (q.layer ?? "mid") === l).map((q, i) => (
     <g key={l + i} transform={`translate(${q.x * W + px * d} ${gy}) scale(${(q.scale ?? 1) * s0 * (q.flip ? -1 : 1)} ${(q.scale ?? 1) * s0})`}><PropShape kind={q.kind} color={q.color} t={t} label={q.label} /></g>));
@@ -28,7 +28,7 @@ const Stage: React.FC<{sc: SplitSide & {props?: Scene["props"]}; p: number; t: n
   return (
     <>
       <Background set={sc.set} light={sc.light} px={px * 0.6} t={t} seed={seed} />
-      <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{position: "absolute", left: 0, top: 0, overflow: "visible"}}>
+      <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{position: "absolute", left: 0, top: 0, overflow: "visible", opacity: vis, transform: `translateY(${dy}px)`}}>
         {layer("back", 0.5, groundAt(0.92), 0.5)}
         {layer("mid", 0.85, groundAt(0.55), 0.8)}
         {chars.map(({c, i}) => {
@@ -41,6 +41,26 @@ const Stage: React.FC<{sc: SplitSide & {props?: Scene["props"]}; p: number; t: n
       </svg>
     </>
   );
+};
+
+// Eintritt (8 Frames einblenden, 10 px aufsteigen) und Ausblenden vor hartem Schnitt (6–12 Frames, Standard 8).
+const IN_F = 8;
+const motion = (story: Story, idx: number, tl: number, dur: number) => {
+  const f = tl * FPS; let vis = 1, dy = 0;
+  const tin = transOf(story, idx);
+  if (idx > 0 && (tin === "cut" || tin === "flash")) { const a = ease(clamp(f / IN_F)); vis *= a; dy += (1 - a) * 10; }
+  const sc = story.scenes[idx]; const next = story.scenes[idx + 1];
+  if (next && sc.fadeOut !== false && ["cut", "flash"].includes(transOf(story, idx + 1))) {
+    const n = Math.min(12, Math.max(6, sc.fadeOut ?? 8)); const b = ease(clamp((dur * FPS - f) / n)); vis *= b; dy += (1 - b) * 8;
+  }
+  return {vis, dy};
+};
+// Sanfter Zoom: 36 Frames, endet ca. 1 s vor Szenenende (steht danach still). Max 1,33×.
+const zoomOf = (sc: Scene, tl: number, dur: number) => {
+  const auto = dur >= 3 && !["push", "pull", "focus", "dolly", "whip"].includes(sc.cam);
+  const z = sc.zoom === false ? 1 : Math.min(1.33, sc.zoom ?? (auto ? 1.12 : 1));
+  if (z <= 1) return 1;
+  const s0 = Math.max(0.4, dur - 1 - 1.2); return 1 + (z - 1) * ease(clamp((tl - s0) / 1.2));
 };
 
 const SceneView: React.FC<{story: Story; idx: number; tl: number; dur: number; now: number}> = ({story, idx, tl, dur, now}) => {
@@ -70,9 +90,11 @@ const SceneView: React.FC<{story: Story; idx: number; tl: number; dur: number; n
       sc0 = 1.05 + 0.38 * Math.min(1, k) * e; break;
     }
   }
+  sc0 *= zoomOf(sc, tl, dur);
   const px = tx * 0.5;
+  const mo = motion(story, idx, tl, dur);
   const ctx = makeCtx(look, LIGHTS[sc.light], seed);
-  const stage = (side: SplitSide & {props?: Scene["props"]}, sd: number) => <Stage sc={side} p={p} t={t} tl={tlx} px={px} seed={sd} charK={st.charK} />;
+  const stage = (side: SplitSide & {props?: Scene["props"]}, sd: number) => <Stage sc={side} p={p} t={t} tl={tlx} px={px} seed={sd} charK={st.charK} vis={mo.vis} dy={mo.dy} />;
   const half = (side: SplitSide & {props?: Scene["props"]}, sd: number, right: boolean, label?: string) => (
     <AbsoluteFill style={{clipPath: right ? "inset(0 0 0 50%)" : "inset(0 50% 0 0)"}}>
       <AbsoluteFill style={{transform: `translateX(${right ? 270 : -270}px)`}}>
