@@ -1,7 +1,7 @@
 ---
 owner: A
 status: entwurf
-aktualisiert: 2026-11-26
+aktualisiert: 2026-11-27
 tags: [ki, agenten, pipeline, automatisierung]
 ---
 # Agenten-Pipeline: ein Agent liefert die fertigen Videos
@@ -46,6 +46,8 @@ flowchart LR
 | YouTube Studio (eigener Kanal) | Retention, Shares, Abos je Short | Mensch trägt ein | offiziell |
 | YouTube Data API (Gratis-Kontingent) | öffentliche Zahlen zu Videos/Kanälen der Nische (nur lesen) | Skill `trend-scout`, Roadmap Phase 3 | Kontingent siehe [Google-Doku](https://developers.google.com/youtube/v3/docs/videos/insert) (Quota nicht von uns geprüft → **unklar**) |
 | Google Trends, Reddit (öffentliche Seiten) | Themen-Nachfrage | Skill `trend-scout` | nur Ideen-Signal, **nie Text übernehmen** |
+
+**Welche Signale die Plattformen werten, welche API-Felder es gibt und welche Kennzahlen/Bewertungsformel der Analyse-Agent nutzt:** [[Algorithmus]] (§5, Stand 27.11.2026).
 
 **Ehrlich:** Die *eigenen* Zahlen sind das beste Signal, brauchen aber erst ~30 Videos. Davor ist die Auswahl ein Schätzen aus öffentlichen Trends. Eine Scraping-Lösung für TikTok ist **nicht** vorgesehen (Nutzungsbedingungen, Konto-Risiko).
 
