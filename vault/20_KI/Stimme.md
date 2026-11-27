@@ -30,9 +30,22 @@ Teil von [[Agenten-Pipeline]] (Schritt 5) und [[Video-Baukasten]]. Frage: Gratis
 - **TikTok:** Zu KI-Stimme bei Creator Rewards **kein Primärtext gefunden → unklar**. Label-Pflicht bei realistischer KI-Stimme ([TikTok-Hilfe](https://support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content)).
 - Gegenmittel: Stimmen und Tempo pro Video variieren (Kokoro hat mehrere Stimmen), eigenes Skript, gute Schnitt-Betonung, Menschenstimme als Vergleich.
 
-## Plan für den Baukasten (noch nicht gebaut)
-1. `voice.py`: Text aus Story-JSON → `video/public/<name>.wav` (Kokoro).
-2. Whisper lokal → Wortzeiten → `words` ins Story-JSON (der Baukasten liest `voice` und `words` schon, siehe [[Video-Baukasten]]).
+## Baukasten-Anbindung: `video/scripts/voice.py` (geschrieben 27.11.2026)
+**Status:** Wort-Ausrichtung getestet (Skript-Wörter ↔ Whisper-Wörter, Lücken werden interpoliert). **Kokoro- und Whisper-Aufrufe sind NICHT auf einem echten PC getestet** – beim ersten Lauf können Fehler auftreten (z. B. Python-Version: nicht geprüft, Python 3.10–3.12 ist die sichere Wahl).
+
+**Auf dem PC:**
+```
+cd video
+pip install -r scripts/requirements-voice.txt
+# Kokoro-Modelldateien (kokoro-v1.0.onnx, voices-v1.0.bin) aus dem kokoro-onnx-Release "model-files-v1.0" nach video/models/ legen
+python scripts/voice.py <story-name> --voice af_sarah --speed 1.0
+node scripts/render.mjs <story-name>
+```
+Das Skript schreibt `video/public/<name>.wav` und trägt `voice` + `words` ins Story-JSON ein. Pro Story können `voiceName` und `speed` gesetzt werden (Variation!).
+
+## Plan für den Baukasten
+1. ✅ `voice.py`: Text aus Story-JSON → `video/public/<name>.wav` (Kokoro), ungetestet auf PC.
+2. ✅ Whisper lokal → Wortzeiten → `words` ins Story-JSON (der Baukasten liest `voice` und `words` schon, siehe [[Video-Baukasten]]).
 3. Musik leise darunter (lizenzfrei), Stimme zuerst, Musik danach.
 4. Test auf PC: 3 Stimmen × 1 Skript, Hörprobe durch A + B, besten Klang festlegen.
 
@@ -41,6 +54,6 @@ Teil von [[Agenten-Pipeline]] (Schritt 5) und [[Video-Baukasten]]. Frage: Gratis
 2. **Sicherheit:** Gratis-Stimme mit sauberer Lizenz = kein Konto-Risiko durch die Quelle. Plattform-Risiko bleibt Schablone/Label, **kontrollierbar, nicht null**.
 
 ## Offen
-- [ ] Kokoro + Whisper auf dem PC installieren und testen (A)
+- [ ] Kokoro + Whisper auf dem PC installieren, `voice.py` mit `stories/test-hund.json` laufen lassen, Fehler an Claude melden (A)
 - [ ] Piper-LICENSE im aktuellen Repo lesen, falls Reserve nötig
 - [ ] Hörprobe A + B, Entscheidung eintragen

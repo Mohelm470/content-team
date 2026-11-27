@@ -8,6 +8,7 @@ export type Scene = {set: SetName; light: Light; cam: Cam; text: string; chars: 
 export type Story = {
   id: string; title: string; hookTypes?: string; wps?: number;
   voice?: string; // Datei in public/, z. B. "voice.wav"
+  voiceName?: string; speed?: number; // für scripts/voice.py (Kokoro-Stimme, Tempo)
   words?: {w: string; t: number}[]; // Wortzeiten (Sek), überschreibt die Auto-Zeiten
   music?: string; scenes: Scene[];
 };
